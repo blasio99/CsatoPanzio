@@ -1,282 +1,405 @@
-.parallax {
-	/* The image used */
-	/*background-image: url("../assets/img/weather-bg.jpg");*/
-  
-	/* Set a specific height */
-	min-height: 500px; 
-  
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-  }
-
-/* Load Settings */
 .no-scroll-y {
-	overflow-y: hidden;
+  overflow-y: hidden;
 }
 
-#preloader-section{
-    	box-sizing: border-box;
-    	margin: 0;
-    	padding: 0;
+#preloader-section {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-/* Preloader */
-.ctn-preloader {
-	-webkit-box-align: center;
-	        align-items: center;
-  
-  /* Show or Hide cursor when hover of Preloader*/
-  cursor: none;
-  
-	display: -webkit-box;
-	display: flex;
-  height: 100%;
-  -webkit-box-pack: center;
-          justify-content: center;
-	position: fixed;
-	left: 0;
-  top: 0;
-	width: 100%;
+#preloader {
+  position: fixed;
+  inset: 0;
   z-index: 9999;
+  background: radial-gradient(circle at 20% 20%, #e6f6ec 0%, #fff 55%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.ctn-preloader .animation-preloader {
-	position: absolute;
-  z-index: 100;
+#ctn-preloader.preloader-cinematic {
+  position: relative;
+  width: min(420px, 90vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  overflow: hidden;
 }
 
-/* Spinner loading */
-.ctn-preloader .animation-preloader .spinner {
-  -webkit-animation: spinner 1s infinite linear;
-          animation: spinner 1s infinite linear;
-	border-radius: 50%;
-  border: 16px solid rgba(223, 157, 43, 0.2);
-  border-top-color: #DF9D2B;
-  height: 9em;
-  margin: 0 auto 3.5em auto;
-  width: 9em;
-}
-
-/* Text Loading */
-.ctn-preloader .animation-preloader .txt-loading {
-  font: bold 5em 'Montserrat', sans-serif;
-	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-}
-
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
-  -webkit-animation: letters-loading 2s infinite;
-          animation: letters-loading 2s infinite;
-  color: #DF9D2B;
-  content: attr(data-text-preloader);
-  left: 0;
-  opacity: 0;
+.preloader-cinematic::before,
+.preloader-cinematic::after {
+  content: "";
   position: absolute;
-  top: 0;
-  -webkit-transform: rotateY(-90deg);
-          transform: rotateY(-90deg);
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(79, 157, 87, 0.25), transparent 60%);
+  filter: blur(18px);
+  animation: orbDrift 10s ease-in-out infinite;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading {
-	color: rgba(223, 157, 43, 0.2);
-	position: relative;
+.preloader-cinematic::after {
+  animation-delay: -3s;
+  bottom: -120px;
+  right: -80px;
 }
 
-/* Letters Animation */
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+.preloader-cinematic::before {
+  top: -140px;
+  left: -110px;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(3):before {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+.preloader-scene {
+  position: relative;
+  width: min(320px, 60vw);
+  height: min(320px, 60vw);
+  border-radius: 32px;
+  background: linear-gradient(180deg, #f2fbf4 0%, #e2f2e6 45%, #cde9d3 100%);
+  box-shadow: 0 30px 80px rgba(13, 23, 43, 0.15);
+  overflow: hidden;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(4):before {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+.scene-sun {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #B4E4CA 0%, #6AB47E 70%);
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: sunPulse 3.5s ease-in-out infinite;
+  box-shadow: 0 0 40px rgba(79, 157, 87, 0.35);
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(5):before {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+.scene-glow {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(150, 200, 170, 0.25), transparent 60%);
+  animation: glowPulse 4s ease-in-out infinite;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(6):before {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+.scene-mountains {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(7):before {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+.mountain {
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(135deg, #78B28D 0%, #478D5A 80%);
+  transform: rotate(45deg) translateY(40px);
+  border-radius: 12px;
+  opacity: 0.9;
+  box-shadow: 0 20px 40px rgba(60, 90, 72, 0.25);
+  animation: mountainShift 6s ease-in-out infinite;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(8):before {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+.mountain--one {
+  background: linear-gradient(135deg, #7DB993 0%, #3F7C4A 80%);
+  animation-delay: -2s;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(9):before {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+.mountain--two {
+  transform: rotate(45deg) translateY(55px);
+  background: linear-gradient(135deg, #82C099 0%, #4A9460 80%);
+  animation-delay: -1s;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(10):before {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+.mountain--three {
+  transform: rotate(45deg) translateY(65px);
+  background: linear-gradient(135deg, #8AC8A3 0%, #519566 80%);
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(11):before {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+.scene-house {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(12):before {
-  -webkit-animation-delay: 1.1s;
-          animation-delay: 1.1s;
+.house-body {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background: linear-gradient(180deg, #fff 0%, #e7f5e6 100%);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(64, 94, 78, 0.25);
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(13):before {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+.house-roof {
+  position: absolute;
+  width: 130px;
+  height: 60px;
+  background: linear-gradient(120deg, #4F9D57 0%, #6AB47E 100%);
+  clip-path: polygon(50% 0%, 100% 65%, 0 65%);
+  transform: translateY(-30px);
+  box-shadow: 0 15px 25px rgba(79, 157, 87, 0.35);
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(14):before {
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+.house-door {
+  position: absolute;
+  bottom: 0;
+  width: 24px;
+  height: 35px;
+  border-radius: 8px 8px 2px 2px;
+  background: linear-gradient(180deg, #7EBC95, #4E8F62);
+  box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15);
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(15):before {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+.house-window {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.9), rgba(230, 246, 255, 0.8));
+  border: 2px solid rgba(79, 157, 87, 0.4);
+  top: -10px;
+  left: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(16):before {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+.scene-sparkles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
 
-/* Loader section Settings */
-.ctn-preloader .loader-section {
-  background-color: #FFF;
-  height: 100%;
-	position: fixed;
-  top: 0;
-  width: calc(50% + 1px);
+.scene-sparkles span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  animation: sparkleBlink 3s ease-in-out infinite;
 }
 
-.ctn-preloader .loader-section.section-left {
-  left: 0;
+.scene-sparkles span:nth-child(1) {
+  top: 40px;
+  left: 60px;
 }
 
-.ctn-preloader .loader-section.section-right {
-  right: 0;
+.scene-sparkles span:nth-child(2) {
+  top: 120px;
+  right: 70px;
+  animation-delay: -1s;
 }
 
-/* Fade effect in loading animation */
-.loaded .animation-preloader {
+.scene-sparkles span:nth-child(3) {
+  bottom: 90px;
+  left: 80px;
+  animation-delay: -2s;
+}
+
+.scene-sparkles span:nth-child(4) {
+  bottom: 50px;
+  right: 110px;
+  animation-delay: -0.5s;
+}
+
+.preloader-brand {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(42px, 8vw, 76px);
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  position: relative;
+  padding-left: 0.3em;
+  background-image: none;
+  animation: shimmer 2.5s ease-in-out infinite;
+  text-shadow: 0 14px 28px rgba(31, 31, 31, 0.12);
+  z-index: 6;
+}
+
+.preloader-brand--split {
+  letter-spacing: 0.1em;
+  padding-left: 0;
+  display: inline-flex;
+  gap: 0.12em;
+}
+
+.preloader-letter {
+  display: inline-block;
+  animation: letterWave 2.4s ease-in-out infinite;
+  transform-origin: 50% 100%;
+  text-shadow: 0 6px 14px rgba(31, 31, 31, 0.16);
+}
+
+.preloader-letter:nth-child(even) {
+  animation-delay: 0.12s;
+}
+
+.preloader-letter:nth-child(odd) {
+  animation-delay: 0.24s;
+}
+
+.preloader-brand::after {
+  display: none;
+}
+
+.preloader-meter {
+  width: min(300px, 70vw);
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(31, 31, 31, 0.08);
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  z-index: 4;
+}
+
+.meter-fill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(120deg, #4F9D57, #9FD7B5, #4F9D57);
+  background-size: 200% 100%;
+  animation: meterFlow 2.8s ease-in-out infinite;
+}
+
+.loaded #ctn-preloader {
   opacity: 0;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
+  transform: scale(0.98);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* Curtain effect */
-.loaded .loader-section.section-left {
-  -webkit-transform: translateX(-101%);
-          transform: translateX(-101%);
-  -webkit-transition: 2.5s 0.1s all cubic-bezier(0.1, 0.1, 0.1, 2.000);
-  transition: 2.5s 0.1s all cubic-bezier(0.1, 0.1, 0.1, 2.000);
-}
-
-.loaded .loader-section.section-right {
-  -webkit-transform: translateX(101%);
-          transform: translateX(101%);
-  -webkit-transition: 2.5s 0.1s all cubic-bezier(0.1, 0.1, 0.1, 2.000);
-  transition: 2.5s 0.1s all cubic-bezier(0.1, 0.1, 0.1, 2.000);
-}
-
-/* Preloader Animation */
-@-webkit-keyframes spinner {
-	to {
-		-webkit-transform: rotateZ(360deg);
-		        transform: rotateZ(360deg);
-	}
-}
-@keyframes spinner {
-	to {
-		-webkit-transform: rotateZ(360deg);
-		        transform: rotateZ(360deg);
-	}
-}
-
-/* Animation of the letters loading from the preloader */
-@-webkit-keyframes letters-loading {
-  0%,
-  75%,
-  100% {
-  	opacity: 0;
-    -webkit-transform: rotateY(-90deg);
-            transform: rotateY(-90deg);
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-  25%,
+@keyframes glowSweep {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes letterWave {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-6px) scale(1.05);
+    opacity: 0.85;
+  }
+  70% {
+    transform: translateY(2px) scale(0.98);
+    opacity: 1;
+  }
+}
+
+@keyframes meterFlow {
+  0% {
+    transform: translateX(-50%);
+    background-position: 0% 50%;
+    width: 20%;
+  }
+  40% {
+    width: 70%;
+  }
+  60% {
+    transform: translateX(10%);
+    width: 90%;
+  }
+  100% {
+    transform: translateX(100%);
+    width: 20%;
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes sunPulse {
+  0%,
+  100% {
+    transform: translate(-50%, 0) scale(0.95);
+  }
+  50% {
+    transform: translate(-50%, -6px) scale(1.05);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes sparkleBlink {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
   50% {
     opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: scale(1);
   }
 }
-@keyframes letters-loading {
+
+@keyframes orbDrift {
   0%,
-  75%,
   100% {
-  	opacity: 0;
-    -webkit-transform: rotateY(-90deg);
-            transform: rotateY(-90deg);
+    transform: translate(0, 0) scale(1);
+    opacity: 0.4;
   }
-
-  25%,
   50% {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: translate(40px, -30px) scale(1.1);
+    opacity: 0.8;
   }
 }
 
-/* Backward laptop size (laptop, tablet, cell phone) */
-@media screen and (max-width: 767px) {
-	/* Preloader */
-	/* Spinner Loading */	
-	.ctn-preloader .animation-preloader .spinner {
-		height: 8em;
-		width: 8em;
-	}
-
-	/* Text Loading */
-	.ctn-preloader .animation-preloader .txt-loading {
-	  font: bold 3.5em 'Montserrat', sans-serif;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	/* Prelaoder */
-	/* Spinner Loading */
-	.ctn-preloader .animation-preloader .spinner {
-		height: 7em;
-		width: 7em;
-	}
-
-	/* Text Loading */
-	.ctn-preloader .animation-preloader .txt-loading {
-	  font: bold 2em 'Montserrat', sans-serif;
-	}
+@keyframes mountainShift {
+  0%,
+  100% {
+    transform: rotate(45deg) translateY(45px);
+  }
+  50% {
+    transform: rotate(45deg) translateY(30px);
+  }
 }

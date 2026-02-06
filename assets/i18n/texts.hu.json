@@ -1,0 +1,272 @@
+{
+  "global": {
+    "meta": {
+      "title": "Csató Panzió",
+      "description": "Csató Panzió - Pensiunea Csató",
+      "keywords": "Hotel, Csató, Panzió, Pensiune, Pension, Hotel, Accomodation, Cazare, Joseni, Harghita, Alfalu, Hargita, Gheorgheni, Gyergyószentmiklós"
+    },
+    "nav": {
+      "brand": "Csató Panzió",
+      "home": "Főoldal",
+      "about": "Rólunk",
+      "portfolio": "Galéria",
+      "contact": "Kapcsolat",
+      "joseni": "Gyergyóalfalu",
+      "borzont": "Borzont",
+      "langHu": "HU",
+      "langRo": "RO",
+      "langEn": "EN"
+    },
+    "footer": {
+      "text": "&copy; Copyright <strong>Csató</strong> - Minden jog fenntartva | Készítette: <a href=\"https://dotslash.ro\"> DotSlash Romania </a>"
+    },
+    "cookies": {
+      "message": "Ez a weboldal cookie-kat használ, hogy javítsa a felhasználói élményt. A weboldal további használatával Ön beleegyezik a cookie-k használatába.",
+      "link": "További információ",
+      "accept": "Elfogadom"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Néhány nap a pihenésért.",
+      "subtitle": "Egyedülálló hangulat, amely ötvözi a hagyományokat és a modern kényelmet.",
+      "cta": "Kapcsolatfelvétel"
+    },
+    "about": {
+      "title": "Rólunk",
+      "intro": "<p>A Csató Panzió két székelyföldi településen várja vendégeit. A gyergyóalfalvi panzió boutique jellegű wellness élményt nyújt kisebb csoportoknak, míg a borzonti panzió nagyobb társaságokat fogad ugyanazzal a figyelemmel és szolgáltatásokkal.</p>",
+      "locations": {
+        "joseni": {
+          "title": "Gyergyóalfalvi panzió · 18 férőhely",
+          "body": "<ul><li><i class=\"ri-checkbox-blank-circle-fill\"></i> 3 darab 4 személyes apartman, saját fürdővel és hűtővel</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> 2 darab háromágyas szoba, családoknak ideális</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> Dézsa, szauna, grill, közös konyha és ebédlő</li></ul>"
+        },
+        "borzont": {
+          "title": "Borzonti panzió · 10 szoba, 30 fő",
+          "body": "<ul><li><i class=\"ri-checkbox-blank-circle-fill\"></i> 10 kétágyas szoba pótággyal igény szerint, mindegyik saját fürdővel</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> Tágas parkoló, teljes Wi-Fi lefedettség és bizonyos szobákhoz erkély</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> Közösségi terek, dézsa, szauna, grill és sok minden más</li></ul>"
+        }
+      }
+    },
+    "counts": {
+      "happy": "<strong>Boldog vendég</strong> volt a panzióban.",
+      "nights": "Eltöltött <strong>éjszaka</strong> a panzióban.",
+      "years": "<strong>Hatodik éve</strong>, hogy veletek vagyunk.",
+      "foods": "Különböző <strong>ételféle</strong> kiszolgálva."
+    },
+    "features": {
+      "title": "Adottságok",
+      "subtitle": "A következőket élvezheted az itt léted során",
+      "items": {
+        "stores": "Üzletek a közelben",
+        "parking": "Ingyenes parkoló",
+        "internet": "Ingyenes internet",
+        "menu": "Menü lehetőség (csak kérésre)",
+        "bbq": "Kinti sütő",
+        "smoking": "Dohányzásra kijelölt hely",
+        "terrace": "Terasz",
+        "tub": "Fürdődézsa",
+        "heating": "Fűtés beletartozik az árba",
+        "tv": "Lapos képernyős TV-k",
+        "garden": "Udvar",
+        "noPets": "Kiskedvencek <strong>NEM</strong> engedélyezettek"
+      }
+    },
+    "testimonials": {
+      "title": "Vélemények",
+      "subtitle": "A vélemények Booking.com és Facebook oldalakról vannak felhasználva.",
+      "silvia": {
+        "name": "Silvia, md",
+        "role": "Vendég",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>O pensiune moderna, curata. Liniștea si amabilitatea personalului domnește in interior. Parcare gratuita in ograda proprietății. Conexiune de internet puternica. Mic dejun gustos si variat. Cafea bună, poți servi oricând. Baia dotata cu de toate: fen, gel de dus, prosoape. Aducem mulțumiri personalului, in special dlui Hunor, ca ne-a surprins placut in seara de Crăciun cu un platou de dulciuri si palinca, din partea casei!! Vom reveni pentru a finisa traseul de obiective turistice - recomandate de dul Hunor. Recomand din suflet PENSIUNEA CSATÓ.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "ioana": {
+        "name": "Ioana Andreea",
+        "role": "Vendég",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Exceptionala cazare! Gazdele foarte amabile, camera foarte curata si cozy, totul nou, conditii minunate, mic dejun delicios!<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "res77": {
+        "name": "Res77",
+        "role": "Vendég",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Totul la superlativ. De la primire pana la comfort, pret/calitate. Camerele foarte curate, bucataria dotata cu de toate, gratar, living generos, inclusiv jocuri de societate. Nu ratati aceasta pensiune.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "nicu": {
+        "name": "Nicu Girneata",
+        "role": "Vendég",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>O locație îngrijită, administrata de oameni ospitalieri. Super!!<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "gabriella": {
+        "name": "Gabriella Nagy",
+        "role": "Vendég",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Hangulatos hely,szivelyes fogadtatas, baratsagos,kedves vendeglatas 🙂 szivbol ajanlom 👏🏼👏🏼<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "aniko": {
+        "name": "Anikó, hu",
+        "role": "Vendég",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>A panzió tiszta, modern és ízlésesen berendezett. A szállásadók IGAZI vendéglátók, bármilyen kéréssel, kérdéssel fordulhattunk hozzájuk, segítettek a kirándulással, éttermekkel kapcsolatban. A reggeli elmondhatatlanul finom, bőséges volt, melyet ott helyben, helyi alapanyagokból készítettek nekünk. Nagyon jó elhelyezkedés a környék látnivalóihoz tett kirándulásokhoz. Maximális megelégedettséggel távoztunk, ha arrajárunk, biztosan ott szállunk meg legközelebb is :)<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "corina": {
+        "name": "Corina Adriana",
+        "role": "Vendég",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Camera mare, curata, totul îngrijit și de bun gust. Proprietarii foarte amabili, plăcuți. Micul dejun foarte bun, variat și bogat. Localizare aproape de multe atracții din zona. Puteti lua cina la pensiune dacă vorbiți cu proprietarul sau puteți merge în apropiere la doua localuri cu mâncare excelenta.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "ghiurutan": {
+        "name": "Ghiuruțan, ro",
+        "role": "Vendég",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Totul a fost excelent. Camere sunt foarte curate. Nu am simțit niciun fel de miros neplăcut in întreaga pensiune. De asemenea, camerele sunt foarte spațioase. Proprietarii sunt niște oameni extraordinari care ne-au primit cu caldura si ne-au făcut sa ne simțit ca acasă. Micul dejun a fost plin de bunătăți: omleta, platou cu brânzeturi și mezeluri, iaurturi, cornuri și multe alte bunătăți. A fost un mic dejun potrivit chiar și pentru o persoana pretențioasa la mâncare pentru ca a avut de unde alege. Recomand cu mare drag, cu siguranța ne vom mai întoarce aici când suntem in trecere prin aceasta zonă.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      }
+    },
+    "portfolio": {
+      "title": "Galéria",
+      "subtitle": "Fotók a panzióról",
+      "filters": {
+        "all": "Minden",
+        "room": "Szobák",
+        "area": "Közös terek",
+        "food": "Kaja",
+        "joseni": "Joseni",
+        "borzont": "Borzont"
+      },
+      "categories": {
+        "rooms": "Szobák",
+        "commonAreas": "Közös terek",
+        "commonArea": "Közös tér",
+        "food": "Kaja"
+      },
+      "locations": {
+        "joseni": "Joseni",
+        "borzont": "Borzont"
+      },
+      "moreDetails": "További részletek",
+      "items": {
+        "apartment4": "Apartman (4 személyre)",
+        "hall": "Folyósó",
+        "bathroomUp": "Emeleti fürdőszobák",
+        "hallUp": "Fenti folyósó",
+        "kitchen": "Konyha",
+        "dining": "Ebédlő / TV",
+        "livingApartment": "Apartman előszoba",
+        "room3": "Szoba (3 személyre)",
+        "bathTub": "Kádas fürdőszoba",
+        "food": "Kaja",
+        "borzontDining": "Étkező Borzonton",
+        "borzontLounge": "Lounge sarok Borzonton",
+        "borzontCommons": "Közösségi tér Borzonton",
+        "borzontCommonsAlt": "Társalgó Borzonton",
+        "borzontRooms": "Erkélyes szoba Borzonton",
+        "borzontRoomBright": "Világos ikerágyas szoba",
+        "borzontRoomFamily": "Családbarát szoba",
+        "borzontRoomSerene": "Nyugodt sarokszoba",
+        "borzontBathroom": "Borzonti fürdő",
+        "borzontFood": "Reggeli Borzonton",
+        "borzontFood2": "Hidegtál Borzonton",
+        "borzontFood3": "Házi finomságok"
+      }
+    },
+    "contact": {
+      "title": "Írj nekünk",
+      "brand": "Csató Panzió",
+      "description": "Több információért keress minket bátran. Itt vagyunk, hogy segítsünk.",
+      "googleForm": "Google Form",
+      "booking": "Booking.com",
+      "labels": {
+        "email": "E-mail",
+        "phone": "Telefon"
+      },
+      "locations": {
+        "joseni": "Gyergyói út, 5<br>Gyergyóalfalu, HR, 537130",
+        "borzont": "Fő út, 132<br>Borzont, HR, 537131"
+      },
+      "email": "csatopanzio@gmail.com",
+      "phonePrimary": "+40 747 941 491",
+      "phoneSecondary": "+40 755 289 932",
+      "form": {
+        "name": "Neved",
+        "nameError": "Írd be a neved (legalább 4 karakter)",
+        "email": "E-mail címed",
+        "emailError": "Írd be a valós e-mail címed",
+        "subject": "Tárgy",
+        "subjectError": "Legalább 8 karakter hosszú legyen",
+        "message": "Üzenet",
+        "messageError": "Kérünk írj valamit nekünk",
+        "loading": "Betöltés",
+        "error": "Hiba történt. Próbáld újra kérlek.",
+        "success": "Az üzenet elküldve. Köszönjük!",
+        "send": "Küldés"
+      }
+    }
+  },
+  "privacy": {
+    "contentHtml": "<h1 style=\"padding-top: 10%\">Adatvédelmi Nyilatkozat</h1>\n    <h2>Hatálybalépés dátuma: 2024.12.15</h2>\n    <p>Ez az Adatvédelmi Nyilatkozat leírja, hogyan gyűjtjük, használjuk és védjük az Ön adatait, amikor\n      meglátogatja weboldalunkat. A weboldal használatával Ön elfogadja ennek a nyilatkozatnak a feltételeit.</p>\n\n    <h3>1. Az általunk gyűjtött adatok</h3>\n    <p>Azért gyűjtünk adatokat, hogy javítsuk az Ön élményét a weboldalon. Az általunk gyűjtött adatok a következők:\n    </p>\n    <ul>\n      <li><strong>Személyes adatok:</strong> Amikor kapcsolatba lép velünk űrlapokon keresztül, gyűjthetjük az Ön\n        nevét, e-mail címét és más, Ön által önkéntesen megadott információkat.</li>\n      <li><strong>Használati adatok:</strong> Automatikusan gyűjtünk nem személyes adatokat az Ön interakcióiról a\n        weboldalunkkal, például:\n        <ul>\n          <li>Megtekintett oldalak</li>\n          <li>Az oldalon eltöltött idő</li>\n          <li>IP-cím</li>\n          <li>Böngésző típusa és verziója</li>\n          <li>Operációs rendszer</li>\n        </ul>\n      </li>\n    </ul>\n\n    <h3>2. Cookie-k használata</h3>\n    <p>A cookie-k kis szöveges fájlok, amelyeket az Ön eszközén tárolunk, hogy javítsuk a böngészési élményt. Az\n      alábbi célokra használunk cookie-kat:</p>\n    <ul>\n      <li><strong>Szükséges cookie-k:</strong> Ezek a cookie-k elengedhetetlenek a weboldal megfelelő működéséhez.\n      </li>\n      <li><strong>Elemző cookie-k:</strong> A Google Analytics segítségével megértjük, hogyan használják\n        látogatóink a weboldalunkat, és javítjuk szolgáltatásainkat.</li>\n    </ul>\n    <p>További információért arról, hogyan gyűjti és dolgozza fel az adatokat a Google, látogassa meg:\n      <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\">Google Adatvédelmi és\n        Felhasználási Feltételek</a>\n    </p>\n\n    <h3>3. Cookie-k kezelése</h3>\n    <p>A cookie-k beállításait a böngészőjén keresztül kezelheti. A legtöbb böngésző lehetővé teszi a cookie-k\n      blokkolását vagy törlését. Felhívjuk figyelmét, hogy a cookie-k letiltása befolyásolhatja a weboldal\n      működését.</p>\n    <p>Ha ki szeretné kapcsolni a Google Analytics nyomon követését, használhatja az alábbi eszközt:\n      <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\">Google Analytics Opt-Out böngésző\n        bővítmény</a>\n    </p>\n\n    <h3>4. Hogyan használjuk fel az Ön adatait</h3>\n    <p>Az általunk gyűjtött adatokat a következőkre használjuk:</p>\n    <ul>\n      <li>A weboldal működésének és a felhasználói élmény javítása</li>\n      <li>A weboldal teljesítményének és a látogatók viselkedésének megértése</li>\n      <li>A kérdéseire vagy kéréseire adott válaszok biztosítása</li>\n    </ul>\n    <p>Nem értékesítjük és nem osztjuk meg az Ön személyes adatait harmadik felekkel marketing célokra.</p>\n\n    <h3>5. Adatok megőrzése</h3>\n    <p>Az Ön adatait csak addig őrizzük meg, ameddig szükséges a jelen nyilatkozatban meghatározott célok\n      eléréséhez. A Google Analytics által gyűjtött használati adatok megőrzése a Google adatmegőrzési szabályzata\n      szerint történik.</p>\n\n    <h3>6. Az Ön jogai</h3>\n    <p>A tartózkodási helyétől függően az alábbi jogokkal rendelkezhet az alkalmazandó adatvédelmi törvények\n      alapján:</p>\n    <ul>\n      <li>Az adataihoz való hozzáférés joga</li>\n      <li>Adatai helyesbítésének vagy törlésének kérése</li>\n      <li>Hozzájárulásának visszavonása az adatok feldolgozásához</li>\n      <li>Panasz benyújtásának joga egy adatvédelmi hatósághoz</li>\n    </ul>\n    <p>Jogainak gyakorlása érdekében lépjen kapcsolatba velünk: csatopanzio@gmail.com</p>\n\n    <h3>7. Harmadik féltől származó szolgáltatások</h3>\n    <p>Harmadik féltől származó szolgáltatásokat, például a Google Analytics-et használunk a weboldalunk\n      fejlesztéséhez. Ezek a szolgáltatások önállóan is gyűjthetnek, tárolhatnak és feldolgozhatnak adatokat.\n      Javasoljuk, hogy tekintse át az adatvédelmi szabályzataikat további információkért:</p>\n    <ul>\n      <li><a href=\"https://policies.google.com/privacy\" target=\"_blank\">Google Adatvédelmi irányelvek</a></li>\n    </ul>\n\n    <h3>8. Biztonság</h3>\n    <p>Ésszerű intézkedéseket teszünk az Ön adatainak védelme érdekében a jogosulatlan hozzáférés, felhasználás vagy\n      nyilvánosságra hozatal ellen. Az internetes adatátvitel azonban nem garantálható teljes mértékben\n      biztonságosnak.</p>\n\n    <h3>9. Az adatvédelmi nyilatkozat módosításai</h3>\n    <p>Ezt a nyilatkozatot időről időre frissíthetjük. Az esetleges változásokat ezen az oldalon tesszük közzé az új\n      hatálybalépés dátumával együtt. Javasoljuk, hogy rendszeresen tekintse át ezt a nyilatkozatot.</p>\n\n    <h3>10. Kapcsolat</h3>\n    <p>Ha bármilyen kérdése vagy aggálya van az Adatvédelmi Nyilatkozattal kapcsolatban, vegye fel velünk a\n      kapcsolatot:</p>\n    <p><strong>Email:</strong> csatopanzio@gmail.com</p>\n    <p><strong>Cím:</strong> Gyergyói út, 5, Gyergyüalfalu, Hargita, Románia</p>\n\n  </div>\n\n  <!-- ======= Footer ======= -->"
+  },
+  "lodging": {
+    "labels": {
+      "type": "Típus:",
+      "placement": "Elhelyezkedés:",
+      "book": "Foglalás:",
+      "note": "Megjegyzés:"
+    }
+  },
+  "joseni": {
+    "sections": {
+      "whole": {
+        "title": "Az egész panzió",
+        "subtitle": "18 fő részére",
+        "list": {
+          "type": "18 felnőtt részére"
+        },
+        "description": "5 szoba, saját fürdőszobák, hűtőszekrények a szobákban, ingyenes wifi, hozzáférés a konyhához, papucsok, ingyenes parkoló, fürdődézsa, grillezési lehetőség, fűtés, 24/24h elérhetőség."
+      },
+      "room3": {
+        "title": "Háromágyas szoba saját fürdővel",
+        "subtitle": "3 fő részére",
+        "list": {
+          "type": "3 személyes",
+          "placement": "Emeleten"
+        },
+        "count": "Összesen 2 ilyen típusú szoba van.",
+        "description": "Ez a fajta szoba egy egyszemélyes ágyat és egy franciágyat tartalmaz, saját fürdővel, hűtőszekrénnyel, ingyenes wifivel, hozzáféréssel a konyhához."
+      },
+      "apartmentUp": {
+        "title": "Négyszemélyes apartman saját fürdővel",
+        "subtitle": "4 fő részére",
+        "list": {
+          "type": "4 személyre",
+          "placement": "Emeleten"
+        },
+        "count": "Összesen 2 ilyen fajta szoba van.",
+        "description": "Ez a fajta szoba egy kihúzhatós kanapét (2 személyre) és egy franciágyat tartalmaz, saját fürdővel, hűtőszekrénnyel, ingyenes wifivel, hozzáféréssel a konyhához."
+      },
+      "apartmentDown": {
+        "title": "Négyszemélyes apartman saját fürdővel",
+        "subtitle": "4 fő részére",
+        "list": {
+          "type": "4 személyre",
+          "placement": "Földszinten"
+        },
+        "count": "1 ilyen típusú szoba van.",
+        "description": "Ez a fajta szoba egy kihúzhatós kanapét (2 személyre) és egy franciágyat tartalmaz, saját fürdővel, hűtőszekrénnyel, ingyenes wifivel, hozzáféréssel a konyhához."
+      }
+    }
+  },
+  "borzont": {
+    "sections": {
+      "whole": {
+        "title": "Teljes panzió",
+        "subtitle": "Legfeljebb 30 fő részére",
+        "list": {
+          "type": "10 szoba · 30 férőhely"
+        },
+        "description": "Tíz kétágyas szoba áll rendelkezésre, kérésre pótággyal a harmadik vendégnek, így akár 30 főt is fogadunk. Közösségi terek, dézsa, szauna, grillező, Wi-Fi, parkoló és 0-24 segítség."
+      },
+      "rooms": {
+        "title": "2-3 fős szobák",
+        "subtitle": "Igény esetén erkéllyel",
+        "list": {
+          "type": "2 külön ágy + pótágy kérésre",
+          "placement": "Erkély bizonyos szobákban elérhető"
+        },
+        "count": "Összesen 10 hasonló szoba áll rendelkezésre.",
+        "description": "Világos szobák összeilleszthető ágyakkal és pótággyal a harmadik vendég számára. Minden szobához saját fürdő, hűtő, fűtés és a közterek teljes használata tartozik (a konyha kivételével)."
+      }
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "global": {
+    "meta": {
+      "title": "Pensiunea Csató",
+      "description": "Csató Panzió - Pensiunea Csató",
+      "keywords": "Hotel, Csató, Panzió, Pensiune, Pension, Hotel, Accomodation, Cazare, Joseni, Harghita, Alfalu, Hargita, Gheorgheni, Gyergyószentmiklós"
+    },
+    "nav": {
+      "brand": "Pensiunea Csató",
+      "home": "Home",
+      "about": "Despre noi",
+      "portfolio": "Galerie",
+      "contact": "Contact",
+      "joseni": "Joseni",
+      "borzont": "Borzont",
+      "langHu": "HU",
+      "langRo": "RO",
+      "langEn": "EN"
+    },
+    "footer": {
+      "text": "&copy; Copyright <strong>Csató</strong> - Toate drepturile rezervate | By <a href=\"https://dotslash.ro\"> DotSlash Romania </a>"
+    },
+    "cookies": {
+      "message": "Acest site folosește cookie-uri pentru a vă îmbunătăți experiența. Continuând navigarea, sunteți de acord cu utilizarea cookie-urilor.",
+      "link": "Aflați mai multe",
+      "accept": "Accept"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Câteva zile de odihnă.",
+      "subtitle": "O atmosferă unică ce îmbină tradiția cu confortul modern.",
+      "cta": "Contactează-ne"
+    },
+    "about": {
+      "title": "Despre noi",
+      "intro": "<p>Pensiunea Csató primește oaspeți în două locații din Ținutul Secuiesc. Pensiunea din Joseni oferă o experiență boutique pentru grupuri mai mici, iar proprietatea din Borzont găzduiește grupuri mari cu același nivel de confort și atenție.</p>",
+      "locations": {
+        "joseni": {
+          "title": "Joseni · refugiu pentru 18 persoane",
+          "body": "<ul><li><i class=\"ri-checkbox-blank-circle-fill\"></i> 3 apartamente pentru 4 persoane, cu baie privată și frigider</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> 2 camere pentru 3 persoane, perfecte pentru familii</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> Ciubăr, saună, grătar, bucătărie comună și living</li></ul>"
+        },
+        "borzont": {
+          "title": "Borzont · 10 camere, 30 de locuri",
+          "body": "<ul><li><i class=\"ri-checkbox-blank-circle-fill\"></i> 10 camere twin cu pat suplimentar la cerere și baie privată</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> Parcare generoasă, Wi-Fi peste tot și unele camere au balcon</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> Zone comune, ciubăr, saună, grătar și multe altele</li></ul>"
+        }
+      }
+    },
+    "counts": {
+      "happy": "<strong>Oaspeți fericiți</strong> au fost în pensiune.",
+      "nights": "<strong>Nopți</strong> petrecute în pensiune.",
+      "years": "<strong>Al șaselea an</strong> că suntem cu voi.",
+      "foods": "<strong>Tipuri de mâncare</strong> servite."
+    },
+    "features": {
+      "title": "Facilități",
+      "subtitle": "Următoarele facilități stau la dispoziție",
+      "items": {
+        "stores": "Magazine în jur",
+        "parking": "Parcare gratuită",
+        "internet": "WiFi gratuit",
+        "menu": "Posibilate de meniu (doar la cerere)",
+        "bbq": "Grătar",
+        "smoking": "Loc pentru fumat",
+        "terrace": "Terasă",
+        "tub": "Ciubăr",
+        "heating": "Încălzire inclusă în preț",
+        "tv": "TV cu ecran plat",
+        "garden": "Grădină",
+        "noPets": "Animalele de companie <strong>NU</strong> sunt lăsate"
+      }
+    },
+    "testimonials": {
+      "title": "Recenzii",
+      "subtitle": "Recenziile sunt luate de pe Booking.com și de pe pagina de Facebook.",
+      "silvia": {
+        "name": "Silvia, md",
+        "role": "Oaspete",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>O pensiune moderna, curata. Liniștea si amabilitatea personalului domnește in interior. Parcare gratuita in ograda proprietății. Conexiune de internet puternica. Mic dejun gustos si variat. Cafea bună, poți servi oricând. Baia dotata cu de toate: fen, gel de dus, prosoape. Aducem mulțumiri personalului, in special dlui Hunor, ca ne-a surprins placut in seara de Crăciun cu un platou de dulciuri si palinca, din partea casei!! Vom reveni pentru a finisa traseul de obiective turistice - recomandate de dul Hunor. Recomand din suflet PENSIUNEA CSATÓ.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "ioana": {
+        "name": "Ioana Andreea",
+        "role": "Oaspete",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Exceptionala cazare! Gazdele foarte amabile, camera foarte curata si cozy, totul nou, conditii minunate, mic dejun delicios!<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "res77": {
+        "name": "Res77",
+        "role": "Oaspete",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Totul la superlativ. De la primire pana la comfort, pret/calitate. Camerele foarte curate, bucataria dotata cu de toate, gratar, living generos, inclusiv jocuri de societate. Nu ratati aceasta pensiune.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "nicu": {
+        "name": "Nicu Girneata",
+        "role": "Oaspete",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>O locație îngrijită, administrata de oameni ospitalieri. Super!!<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "gabriella": {
+        "name": "Gabriella Nagy",
+        "role": "Oaspete",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Hangulatos hely,szivelyes fogadtatas, baratsagos,kedves vendeglatas 🙂 szivbol ajanlom 👏🏼👏🏼<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "aniko": {
+        "name": "Anikó, hu",
+        "role": "Oaspete",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>A panzió tiszta, modern és ízlésesen berendezett. A szállásadók IGAZI vendéglátók, bármilyen kéréssel, kérdéssel fordulhattunk hozzájuk, segítettek a kirándulással, éttermekkel kapcsolatban. A reggeli elmondhatatlanul finom, bőséges volt, melyet ott helyben, helyi alapanyagokból készítettek nekünk. Nagyon jó elhelyezkedés a környék látnivalóihoz tett kirándulásokhoz. Maximális megelégedettséggel távoztunk, ha arrajárunk, biztosan ott szállunk meg legközelebb is :)<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "corina": {
+        "name": "Corina Adriana",
+        "role": "Oaspete",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Camera mare, curata, totul îngrijit și de bun gust. Proprietarii foarte amabili, plăcuți. Micul dejun foarte bun, variat și bogat. Localizare aproape de multe atracții din zona. Puteti lua cina la pensiune dacă vorbiți cu proprietarul sau puteți merge în apropiere la doua localuri cu mâncare excelenta.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "ghiurutan": {
+        "name": "Ghiuruțan, ro",
+        "role": "Oaspete",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Totul a fost excelent. Camere sunt foarte curate. Nu am simțit niciun fel de miros neplăcut in întreaga pensiune. De asemenea, camerele sunt foarte spațioase. Proprietarii sunt niște oameni extraordinari care ne-au primit cu caldura si ne-au făcut sa ne simțit ca acasă. Micul dejun a fost plin de bunătăți: omleta, platou cu brânzeturi și mezeluri, iaurturi, cornuri și multe alte bunătăți. A fost un mic dejun potrivit chiar și pentru o persoana pretențioasa la mâncare pentru ca a avut de unde alege. Recomand cu mare drag, cu siguranța ne vom mai întoarce aici când suntem in trecere prin aceasta zonă.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      }
+    },
+    "portfolio": {
+      "title": "Galerie",
+      "subtitle": "Fotografii ale pensiunii",
+      "filters": {
+        "all": "Toate",
+        "room": "Camere",
+        "area": "Spații comune",
+        "food": "Mâncare",
+        "joseni": "Joseni",
+        "borzont": "Borzont"
+      },
+      "categories": {
+        "rooms": "Camere",
+        "commonAreas": "Spații comune",
+        "commonArea": "Spațiu comun",
+        "food": "Mâncare"
+      },
+      "locations": {
+        "joseni": "Joseni",
+        "borzont": "Borzont"
+      },
+      "moreDetails": "Mai multe detalii",
+      "items": {
+        "apartment4": "Apartament (pentru 4 persoane)",
+        "hall": "Hol",
+        "bathroomUp": "Baie la etaj",
+        "hallUp": "Hol la etaj",
+        "kitchen": "Bucătărie",
+        "dining": "Sală de mese / TV",
+        "livingApartment": "Living în apartament",
+        "room3": "Cameră (pentru 3 persoane)",
+        "bathTub": "Baie cu cadă",
+        "food": "Mâncare",
+        "borzontDining": "Zonă de luat masa în Borzont",
+        "borzontLounge": "Colț de relaxare în Borzont",
+        "borzontCommons": "Sală comună în Borzont",
+        "borzontCommonsAlt": "Lounge social în Borzont",
+        "borzontRooms": "Cameră twin cu balcon",
+        "borzontRoomBright": "Cameră twin luminoasă",
+        "borzontRoomFamily": "Cameră pentru familie",
+        "borzontRoomSerene": "Cameră liniștită",
+        "borzontBathroom": "Baie în Borzont",
+        "borzontFood": "Mic dejun în Borzont",
+        "borzontFood2": "Bufet în Borzont",
+        "borzontFood3": "Deserturi de casă"
+      }
+    },
+    "contact": {
+      "title": "Contactează-ne",
+      "brand": "Pensiunea Csató",
+      "description": "Pentru mai multe detalii nu ezitați să ne contactați. Suntem aici să vă ajutăm.",
+      "googleForm": "Google Form",
+      "booking": "Booking.com",
+      "labels": {
+        "email": "Email",
+        "phone": "Telefon"
+      },
+      "locations": {
+        "joseni": "Strada Gheorgheni, nr. 5<br>Joseni, HR, 537130",
+        "borzont": "Strada Principală, 132<br>Borzont, HR, 537131"
+      },
+      "email": "csatopanzio@gmail.com",
+      "phonePrimary": "+40 747 941 491",
+      "phoneSecondary": "+40 755 289 932",
+      "form": {
+        "name": "Numele și prenumele",
+        "nameError": "Numele (minim 4 caractere)",
+        "email": "E-mail",
+        "emailError": "Să fie un e-mail valid",
+        "subject": "Subiect",
+        "subjectError": "Minim 8 caractere",
+        "message": "Mesaj",
+        "messageError": "Vă rugăm să scrieți un mesaj",
+        "loading": "Se încarcă",
+        "error": "A apărut o eroare. Încercați din nou.",
+        "success": "Mesajul a fost trimis. Mulțumim!",
+        "send": "Trimite"
+      }
+    }
+  },
+  "privacy": {
+    "contentHtml": "<h1 style=\"padding-top: 10%\">Politica de Confidențialitate</h1>\n    <h2>Data intrării în vigoare: 15.12.2024</h2>\n    <p>Această Politică de Confidențialitate descrie modul în care colectăm, utilizăm și protejăm informațiile\n      dumneavoastră atunci când vizitați site-ul nostru. Prin utilizarea acestui site, sunteți de acord cu termenii\n      acestei politici.</p>\n\n    <h3>1. Informații pe care le colectăm</h3>\n    <p>Colectăm informații pentru a îmbunătăți experiența dumneavoastră pe site-ul nostru. Informațiile pe care le\n      colectăm includ:</p>\n    <ul>\n      <li><strong>Informații personale:</strong> Când ne contactați prin formulare, putem colecta numele, adresa de\n        email și alte informații pe care ni le furnizați în mod voluntar.</li>\n      <li><strong>Date de utilizare:</strong> Colectăm automat informații non-personale despre interacțiunile\n        dumneavoastră cu site-ul nostru, cum ar fi:\n        <ul>\n          <li>Pagini vizitate</li>\n          <li>Timp petrecut pe site</li>\n          <li>Adresa IP</li>\n          <li>Tipul și versiunea browserului</li>\n          <li>Sistemul de operare</li>\n        </ul>\n      </li>\n    </ul>\n\n    <h3>2. Utilizarea cookie-urilor</h3>\n    <p>Cookie-urile sunt fișiere text mici stocate pe dispozitivul dumneavoastră pentru a vă îmbunătăți experiența de\n      navigare. Folosim cookie-uri în următoarele scopuri:</p>\n    <ul>\n      <li><strong>Cookie-uri necesare:</strong> Aceste cookie-uri sunt esențiale pentru funcționarea corectă a\n        site-ului.</li>\n      <li><strong>Cookie-uri de analiză:</strong> Folosim Google Analytics pentru a înțelege modul în care vizitatorii\n        utilizează site-ul nostru și pentru a ne îmbunătăți serviciile.</li>\n    </ul>\n    <p>Pentru mai multe informații despre modul în care Google colectează și procesează date, vizitați:\n      <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\">Google's Privacy & Terms</a>\n    </p>\n\n    <h3>3. Gestionarea cookie-urilor</h3>\n    <p>Puteți gestiona preferințele privind cookie-urile prin setările browserului dumneavoastră. Majoritatea\n      browserelor vă permit să blocați sau să ștergeți cookie-urile. Totuși, rețineți că dezactivarea cookie-urilor\n      poate afecta funcționalitatea site-ului.</p>\n    <p>Dacă doriți să dezactivați urmărirea prin Google Analytics, puteți utiliza următoarele instrumente:\n      <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\">Google Analytics Opt-Out Browser Add-on</a>\n    </p>\n\n    <h3>4. Cum utilizăm informațiile dumneavoastră</h3>\n    <p>Informațiile pe care le colectăm sunt utilizate pentru:</p>\n    <ul>\n      <li>Îmbunătățirea funcționalității site-ului și a experienței utilizatorului</li>\n      <li>Înțelegerea performanței site-ului și a comportamentului vizitatorilor</li>\n      <li>Răspunsul la solicitările sau întrebările dumneavoastră</li>\n    </ul>\n    <p>Nu vindem și nu împărtășim informațiile dumneavoastră personale cu terți în scopuri de marketing.</p>\n\n    <h3>5. Păstrarea datelor</h3>\n    <p>Păstrăm datele dumneavoastră doar atât timp cât este necesar pentru a îndeplini scopurile menționate în această\n      politică. Datele de utilizare colectate prin Google Analytics sunt păstrate conform politicilor de retenție ale\n      Google.</p>\n\n    <h3>6. Drepturile dumneavoastră</h3>\n    <p>În funcție de locația dumneavoastră, este posibil să aveți următoarele drepturi în baza legislației aplicabile\n      privind confidențialitatea:</p>\n    <ul>\n      <li>Dreptul de acces la datele dumneavoastră</li>\n      <li>Dreptul de a solicita corectarea sau ștergerea datelor dumneavoastră</li>\n      <li>Dreptul de a vă retrage consimțământul pentru procesarea datelor</li>\n      <li>Dreptul de a depune o plângere la o autoritate de protecție a datelor</li>\n    </ul>\n    <p>Pentru a vă exercita drepturile, contactați-ne la: csatopanzio@gmail.com</p>\n\n    <h3>7. Servicii terțe</h3>\n    <p>Folosim servicii terțe, cum ar fi Google Analytics, pentru a îmbunătăți site-ul nostru. Aceste servicii pot\n      colecta, stoca și procesa date în mod independent. Vă recomandăm să consultați politicile lor de confidențialitate\n      pentru mai multe informații:</p>\n    <ul>\n      <li><a href=\"https://policies.google.com/privacy\" target=\"_blank\">Politica de confidențialitate Google</a></li>\n    </ul>\n\n    <h3>8. Securitate</h3>\n    <p>Luăm măsuri rezonabile pentru a proteja informațiile dumneavoastră împotriva accesului, utilizării sau divulgării\n      neautorizate. Cu toate acestea, nicio transmisie de date pe internet nu poate fi garantată ca fiind complet\n      sigură.</p>\n\n    <h3>9. Modificări ale acestei politici de confidențialitate</h3>\n    <p>Putem actualiza această politică din când în când. Orice modificări vor fi publicate pe această pagină împreună\n      cu data actualizată. Vă încurajăm să revizuiți periodic această politică.</p>\n\n    <h3>10. Contactați-ne</h3>\n    <p>Dacă aveți întrebări sau nelămuriri legate de această Politică de Confidențialitate, vă rugăm să ne contactați\n      la:</p>\n    <p><strong>Email:</strong> csatopanzio@gmail.com</p>\n    <p><strong>Adresă:</strong> Str. Gheorgheni, nr. 5, Joseni, Harghita, România</p>\n\n\n  <!-- ======= Footer ======= -->"
+  },
+  "lodging": {
+    "labels": {
+      "type": "Tip:",
+      "placement": "Nivel:",
+      "book": "Rezervă acum:",
+      "note": "Notă:"
+    }
+  },
+  "joseni": {
+    "sections": {
+      "whole": {
+        "title": "Întreaga pensiune",
+        "subtitle": "Pentru 18 adulți",
+        "list": {
+          "type": "Pentru 18 persoane"
+        },
+        "description": "5 camere, băi private, frigidere în fiecare cameră, wifi gratuit, acces la bucătărie, șlapi, parcare gratuită, ciubăr, grătar, suport 24/24h."
+      },
+      "room3": {
+        "title": "Cameră pentru 3 persoane cu baie proprie",
+        "subtitle": "Pentru 3 adulți",
+        "list": {
+          "type": "pentru 3 persoane",
+          "placement": "la etaj"
+        },
+        "count": "În total sunt 2 camere din acest tip.",
+        "description": "Camera de acest tip conține un pat pentru o persoană și un pat dublu, cu baie proprie, cu frigider, internet gratuit, acces la bucătărie."
+      },
+      "apartmentUp": {
+        "title": "Apartament pentru 4 persoane cu baie proprie",
+        "subtitle": "Pentru 4 persoane",
+        "list": {
+          "type": "pentru 4 persoane",
+          "placement": "la etaj"
+        },
+        "count": "În total sunt 2 camere din acest tip.",
+        "description": "Camera de acest tip conține o canapea extensibilă pentru 2 persoane și un pat dublu, cu baie proprie, cu frigider, internet gratuit, acces la bucătărie."
+      },
+      "apartmentDown": {
+        "title": "Apartament pentru 4 persoane cu baie proprie",
+        "subtitle": "Pentru 4 persoane",
+        "list": {
+          "type": "pentru 4 persoane",
+          "placement": "la etaj"
+        },
+        "count": "În total sunt 2 camere din acest tip.",
+        "description": "Camera de acest tip conține o canapea extensibilă pentru 2 persoane și un pat dublu, cu baie proprie, cu frigider, internet gratuit, acces la bucătărie."
+      }
+    }
+  },
+  "borzont": {
+    "sections": {
+      "whole": {
+        "title": "Întreaga pensiune",
+        "subtitle": "Până la 30 de persoane",
+        "list": {
+          "type": "10 camere · 30 locuri"
+        },
+        "description": "Zece camere duble pot primi un al treilea oaspete la cerere, oferind o capacitate totală de 30 de persoane. Spații comune, ciubăr, saună, grătar, Wi-Fi, parcare și suport permanent."
+      },
+      "rooms": {
+        "title": "Camere pentru 2-3 persoane",
+        "subtitle": "Balcon opțional",
+        "list": {
+          "type": "2 paturi single + pat suplimentar la cerere",
+          "placement": "Balcon disponibil în anumite camere"
+        },
+        "count": "10 camere de acest tip sunt disponibile.",
+        "description": "Camere luminoase cu paturi twin care se pot uni și pat suplimentar pentru al treilea oaspete. Fiecare cameră are baie privată, Wi-Fi, frigider, încălzire și acces la toate facilitățile din Borzont (în afara bucătăriei)."
+      }
+    }
+  }
+}

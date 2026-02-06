@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="keywords"
-    content="Hotel, Csató, Panzió, Pensiune, Pension, Hotel, Accomodation, Cazare, Joseni, Harghita, Alfalu, Hargita, Gheorgheni, Gyergyószentmiklós">
+    content="Hotel, Csató, Panzió, Pensiune, Pension, Hotel, Accomodation, Cazare, Joseni, Harghita, Alfalu, Hargita, Gheorgheni, Gyergyószentmiklós"
+    data-i18n-content="global.meta.keywords">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Csató Pension</title>
-  <meta content="Csató Panzió - Pensiunea Csató" name="description">
+  <title data-i18n="global.meta.title"></title>
+  <meta content="Csató Panzió - Pensiunea Csató" name="description" data-i18n-content="global.meta.description">
 
   <!-- Favicons -->
   <link href="../assets/img/just-building.png" rel="icon">
@@ -32,47 +33,44 @@
   <link href="../assets/css/preloader.css" rel="stylesheet">
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C62ZHL5CT3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-C62ZHL5CT3');
-</script>
-
-<body id="page-top" class="no-scroll-y">
+<body id="page-top" class="no-scroll-y" data-page="home">
+  <script>
+    window.APP_LANG = 'en';
+    window.APP_PAGE = 'home';
+    window.ASSET_BASE = '../';
+  </script>
   <!-- Start: Preloader -->
   <section id="preloader-section">
     <div id="preloader">
-      <div id="ctn-preloader" class="ctn-preloader">
-        <div class="animation-preloader">
-
-          <!-- Spinner -->
-          <div class="spinner"></div>
-
-          <!-- Start: Text Loading -->
-          <div class="txt-loading">
-            <span data-text-preloader="C" class="letters-loading">C</span>
-            <span data-text-preloader="S" class="letters-loading">S</span>
-            <span data-text-preloader="A" class="letters-loading">A</span>
-            <span data-text-preloader="T" class="letters-loading">T</span>
-            <span data-text-preloader="Ó" class="letters-loading">Ó</span>
+      <div id="ctn-preloader" class="preloader-cinematic">
+        <div class="preloader-scene">
+          <div class="scene-sun"></div>
+          <div class="scene-glow"></div>
+          <div class="scene-mountains">
+            <span class="mountain mountain--one"></span>
+            <span class="mountain mountain--two"></span>
+            <span class="mountain mountain--three"></span>
           </div>
-          <!-- End: Text Loading -->
-
+          <div class="scene-house">
+            <span class="house-roof"></span>
+            <span class="house-body"></span>
+            <span class="house-door"></span>
+            <span class="house-window"></span>
+          </div>
+          <div class="scene-sparkles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-
-        <!-- Start: Preloader sides - Model 1 -->
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-        <!-- End: Preloader sides - Model 1 -->
-
+        <div class="preloader-brand" data-word="CSATÓ">CSATÓ</div>
+        <div class="preloader-meter">
+          <span class="meter-fill"></span>
+        </div>
       </div>
     </div>
   </section>
-
   <!-- End: Preloader -->
 
   <!-- ======= Header ======= -->
@@ -80,24 +78,22 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="/en"><span>Csató Pension</span></a></h1>
-        <!--a href="/"><img src="../assets/img/just-building.png" alt="" class="img-fluid"></a-->
+        <h1 class="text-light"><a href="/en"><span data-i18n="global.nav.brand"></span></a></h1>
       </div>
 
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="/en">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#more-services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="get-started"><a href="/en/room-details">Rooms</a></li>
-          <li><a> | </a></li>
-          <li><a href="/">HU</a></li>
-          <li><a href="/ro">RO</a></li>
-          <li><a href="/en">EN</a></li>
+          <li class="active"><a href="/en" data-i18n="global.nav.home"></a></li>
+          <li><a href="#about" data-i18n="global.nav.about"></a></li>
+          <li><a href="#portfolio" data-i18n="global.nav.portfolio"></a></li>
+          <li><a href="#contact" data-i18n="global.nav.contact"></a></li>
+          <li class="get-started"><a href="/en/joseni" data-i18n="global.nav.joseni" data-i18n-parent="li"></a></li>
+          <li class="get-started"><a href="/en/borzont" data-i18n="global.nav.borzont" data-i18n-parent="li"></a></li>
+          <li class="nav-divider" aria-hidden="true"></li>
+          <li class="nav-lang"><a href="/" data-i18n="global.nav.langHu"></a></li>
+          <li class="nav-lang"><a href="/ro" data-i18n="global.nav.langRo"></a></li>
+          <li class="nav-lang"><a href="/en" data-i18n="global.nav.langEn"></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -106,20 +102,19 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-
+    <div class="hero-bg">
+      <div class="hero-bg__layer hero-bg__layer--one" style='background-image: url("../assets/img/joseni/1.webp");'></div>
+      <div class="hero-bg__layer hero-bg__layer--two" style='background-image: url("../assets/img/borzont/1.webp");'></div>
+    </div>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">A few days to relax.</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">A unique atmosphere blending tradition with modern comfort.
-		  </h2>
-          <div data-aos="fade-up" data-aos-delay="800">
+      <div class="row justify-content-start">
+        <div class="col-lg-7 hero-copy" data-aos="fade-up">
+          <h1 data-i18n="home.hero.title"></h1>
+          <h2 data-i18n="home.hero.subtitle"></h2>
+          <div class="cta-links">
             <a href="https://forms.gle/5kmLQehRwpPD4J3R7" target="_blank"
-              class="btn-get-started scrollto">Contact us</a>
+              class="btn-get-started scrollto" data-i18n="home.hero.cta"></a>
           </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="../assets/img/just-building.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -133,22 +128,25 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>About Us</h2>
+          <h2 data-i18n="home.about.title"></h2>
         </div>
 
         <div class="row content">
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              Our guesthouse in Joseni offers relaxation for 18 guests with a hot tub, sauna, and barbecue, in a modern yet rustic environment. 
-              The perfect choice for families, groups of friends, and, in general, for everyone:
-            </p>
-            <ul>
-              <li><i class="ri-checkbox-blank-circle-fill"></i> 3 apartments for 4 people (2 rooms separated) - with
-                refrigerator, private bathroom</li>
-              <li><i class="ri-checkbox-blank-circle-fill"></i> 2 rooms for 3 people - with refrigerator, private
-                bathroom</li>
-              <li><i class="ri-checkbox-blank-circle-fill"></i> Pension with a total of 18 beds</li>
-            </ul>
+          <div class="col-lg-12 about-intro" data-aos="fade-up" data-aos-delay="150" data-i18n-html="home.about.intro"></div>
+        </div>
+
+        <div class="row about-locations">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-card">
+              <h3 data-i18n="home.about.locations.joseni.title"></h3>
+              <div data-i18n-html="home.about.locations.joseni.body"></div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="about-card">
+              <h3 data-i18n="home.about.locations.borzont.title"></h3>
+              <div data-i18n-html="home.about.locations.borzont.body"></div>
+            </div>
           </div>
         </div>
 
@@ -162,7 +160,7 @@
         <div class="row">
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start"
             data-aos="fade-right" data-aos-delay="150">
-            <img src="../assets/img/travel.png" alt="" class="img-fluid">
+            <img loading="lazy" src="../assets/img/travel.png" alt="" class="img-fluid">
           </div>
 
           <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
@@ -171,24 +169,24 @@
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="icofont-simple-smile"></i>
-                    <span data-toggle="counter-up">3590</span>
-                    <p><strong>Happy Clients</strong> were in our property.</p>
+                    <span data-toggle="counter-up">6770</span>
+                    <p data-i18n-html="home.counts.happy"></p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="icofont-document-folder"></i>
-                    <span data-toggle="counter-up">1761</span>
-                    <p><strong>Nights</strong> spent by guests in the property</p>
+                    <span data-toggle="counter-up">1912</span>
+                    <p data-i18n-html="home.counts.nights"></p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="icofont-clock-time"></i>
-                    <span data-toggle="counter-up">5</span>
-                    <p><strong>Fifth year</strong> of being open. </p>
+                    <span data-toggle="counter-up">6</span>
+                    <p data-i18n-html="home.counts.years"></p>
                   </div>
                 </div>
 
@@ -196,7 +194,7 @@
                   <div class="count-box">
                     <i class="icofont-award"></i>
                     <span data-toggle="counter-up">163</span>
-                    <p>The number of <strong>various foods</strong> served at the property.</p>
+                    <p data-i18n-html="home.counts.foods"></p>
                   </div>
                 </div>
               </div>
@@ -207,135 +205,86 @@
       </div>
     </section><!-- End Counts Section -->
 
-    <!-- ======= More Services Section ======= -->
-    <section id="more-services" class="more-services">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p>Some highlights of services</p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card" style='background-image: url("../assets/img/rooms/kitchen3.jpg");' data-aos="fade-up"
-              data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a class="scrollto" href="#portfolio">Kitchen</a></h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="card" style='background-image: url("../assets/img/rooms/living.jpg");' data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a class="scrollto" href="#portfolio">Common Area</a></h5>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("../assets/img/rooms/tub.jpg");' data-aos="fade-up"
-              data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a class="scrollto" href="#portfolio">Bathroom</a></h5>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("../assets/img/rooms/food.jpg");' data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a class="scrollto" href="#portfolio">Food</a></h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End More Services Section -->
-
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Facilities</h2>
-          <p>There are a lot of facilities you can enjoy.</p>
+          <h2 data-i18n="home.features.title"></h2>
+          <p data-i18n="home.features.subtitle"></p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-3 col-md-4">
             <div class="icon-box">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a>Stores in the area</a></h3>
+              <i class="ri-store-line"></i>
+              <h3><a data-i18n="home.features.items.stores"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
-              <i class="ri-parking-fill" style="color: #5578ff;"></i>
-              <h3><a>Free Parking</a></h3>
+              <i class="ri-parking-fill"></i>
+              <h3><a data-i18n="home.features.items.parking"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
-              <i class="ri-home-wifi-line" style="color: #e80368;"></i>
-              <h3><a>Free internet</a></h3>
+              <i class="ri-home-wifi-line"></i>
+              <h3><a data-i18n="home.features.items.internet"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div class="icon-box">
-              <i class="ri-checkbox-blank-circle-line" style="color: #e361ff;"></i>
-              <h3><a>Menu (only on request)</a></h3>
+              <i class="ri-checkbox-blank-circle-line"></i>
+              <h3><a data-i18n="home.features.items.menu"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-logout-box-r-line" style="color: #47aeff;"></i>
-              <h3><a>BBQ Facilities</a></h3>
+              <i class="ri-logout-box-r-line"></i>
+              <h3><a data-i18n="home.features.items.bbq"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-logout-box-r-line" style="color: #ffa76e;"></i>
-              <h3><a>Smoking area</a></h3>
+              <i class="ri-logout-box-r-line"></i>
+              <h3><a data-i18n="home.features.items.smoking"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-logout-box-r-line" style="color: #11dbcf;"></i>
-              <h3><a>Terrace</a></h3>
+              <i class="ri-logout-box-r-line"></i>
+              <h3><a data-i18n="home.features.items.terrace"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-logout-box-r-line" style="color: #4233ff;"></i>
-              <h3><a>Hot Tub</a></h3>
+              <i class="ri-logout-box-r-line"></i>
+              <h3><a data-i18n="home.features.items.tub"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-fire-line" style="color: #b2904f;"></i>
-              <h3><a>Heating included in price</a></h3>
+              <i class="ri-fire-line"></i>
+              <h3><a data-i18n="home.features.items.heating"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-tv-2-line" style="color: #b20969;"></i>
-              <h3><a>Flat-screen TVs</a></h3>
+              <i class="ri-tv-2-line"></i>
+              <h3><a data-i18n="home.features.items.tv"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-logout-box-r-line" style="color: #ff5828;"></i>
-              <h3><a>Garden</a></h3>
+              <i class="ri-logout-box-r-line"></i>
+              <h3><a data-i18n="home.features.items.garden"></a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-star-smile-line" style="color: #29cc61;"></i>
-              <h3><a><strong>NO</strong> pets allowed</a></h3>
+              <i class="ri-star-smile-line"></i>
+              <h3><a data-i18n-html="home.features.items.noPets"></a></h3>
             </div>
           </div>
         </div>
@@ -348,159 +297,81 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Reviews</h2>
-          <p>Reviews are taken from Booking.com and Facebook page</p>
+          <h2 data-i18n="home.testimonials.title"></h2>
+          <p data-i18n="home.testimonials.subtitle"></p>
         </div>
 
         <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="200">
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Silvia, md</h3>
-              <h4>Guest</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                O pensiune moderna, curata. Liniștea si amabilitatea personalului domnește in interior. Parcare gratuita
-                in ograda proprietății.
-                Conexiune de internet puternica. Mic dejun gustos si variat. Cafea bună, poți servi oricând. Baia dotata
-                cu de toate: fen, gel de dus,
-                prosoape. Aducem mulțumiri personalului, in special dlui Hunor, ca ne-a surprins placut in seara de
-                Crăciun cu un platou de dulciuri
-                si palinca, din partea casei!! Vom reveni pentru a finisa traseul de obiective turistice - recomandate
-                de dul Hunor.
-                Recomand din suflet PENSIUNEA CSATÓ.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+              <h3 data-i18n="home.testimonials.silvia.name"></h3>
+              <h4 data-i18n="home.testimonials.silvia.role"></h4>
+              <p data-i18n-html="home.testimonials.silvia.quote"></p>
             </div>
           </div>
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Ioana Andreea</h3>
-              <h4>Guest</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Exceptionala cazare! Gazdele foarte amabile, camera foarte curata si cozy, totul nou, conditii minunate,
-                mic dejun delicios!
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+              <h3 data-i18n="home.testimonials.ioana.name"></h3>
+              <h4 data-i18n="home.testimonials.ioana.role"></h4>
+              <p data-i18n-html="home.testimonials.ioana.quote"></p>
             </div>
           </div>
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Res77</h3>
-              <h4>Guest</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Totul la superlativ. De la primire pana la comfort, pret/calitate. Camerele foarte curate , bucataria
-                dotata cu de toate , gratar , leaving generos, inclusiv jocuri de societate. Nu ratati aceasta pensiune.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+              <h3 data-i18n="home.testimonials.res77.name"></h3>
+              <h4 data-i18n="home.testimonials.res77.role"></h4>
+              <p data-i18n-html="home.testimonials.res77.quote"></p>
             </div>
           </div>
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Nicu Girneata</h3>
-              <h4>Guest</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                O locație îngrijită, administrata de oameni ospitalieri. Super!!
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+              <h3 data-i18n="home.testimonials.nicu.name"></h3>
+              <h4 data-i18n="home.testimonials.nicu.role"></h4>
+              <p data-i18n-html="home.testimonials.nicu.quote"></p>
             </div>
           </div>
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Gabriella Nagy</h3>
-              <h4>Guest</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Hangulatos hely,szivelyes fogadtatas, baratsagos,kedves vendeglatas 🙂 szivbol ajanlom 👏🏼👏🏼
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+              <h3 data-i18n="home.testimonials.gabriella.name"></h3>
+              <h4 data-i18n="home.testimonials.gabriella.role"></h4>
+              <p data-i18n-html="home.testimonials.gabriella.quote"></p>
             </div>
           </div>
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Anikó, hu</h3>
-              <h4>Guest</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                A panzió tiszta, modern és ízlésesen berendezett. A szállásadók IGAZI vendéglátók, bármilyen kéréssel,
-                kérdéssel fordulhattunk hozzájuk,
-                segítettek a kirándulással, éttermekkel kapcsolatban. A reggeli elmondhatatlanul finom, bőséges volt,
-                melyet ott helyben, helyi
-                alapanyagokból készítettek nekünk. Nagyon jó elhelyezkedés a környék látnivalóihoz tett kirándulásokhoz.
-                Maximális megelégedettséggel
-                távoztunk, ha arrajárunk, biztosan ott szállunk meg legközelebb is :)
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+              <h3 data-i18n="home.testimonials.aniko.name"></h3>
+              <h4 data-i18n="home.testimonials.aniko.role"></h4>
+              <p data-i18n-html="home.testimonials.aniko.quote"></p>
             </div>
           </div>
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Dmytro, ua</h3>
-              <h4>Guest</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Дом находится возле дороги, но несмотря на это машин не слышно. Да и движение не большое. По утрам
-                слышно как поют петухи.
-                При заезде нас встретили и быстро поселили. Общались на английском. Кухня не работала. Предложили
-                поужинать в Георгени это 10 минут езды.
-                Номера новые, чистые. Мебель удобная. Кроме кроватей есть удобный диван. Есть свой холодильник.
-                Путешествовал в конце осени, отопление
-                работало все время моего пребывания. Вода горячая постоянно. Вся сантехника в исправности. Розеток в
-                номере достаточное количество.
-                Интернет прекрасно работает на всей территории. Телевизор в номере подключён к интернету. Есть общая
-                терраса. Двор большой. В летнее
-                время во дворе наверное хорошо. Завтрак за 6 евро. Шведский стол. Нарезка мясное, сыр, овощи. Яишница и
-                жаренные колбаски. Кофе,чай,сок.
-                Йогурт, различные джемы. После того как все поели еще осталось. Парковка во дворе, большая. Я считаю что
-                для транзитной остановки подходит
-                идеально. Рекомендую.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+              <h3 data-i18n="home.testimonials.dmytro.name"></h3>
+              <h4 data-i18n="home.testimonials.dmytro.role"></h4>
+              <p data-i18n-html="home.testimonials.dmytro.quote"></p>
             </div>
           </div>
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Corina Adriana</h3>
-              <h4>Guest</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Camera mare, curata, totul îngrijit și de bun gust. Proprietarii foarte amabili, plăcuți. Micul dejun
-                foarte bun, variat și bogat.
-                Localizare aproape de multe atracții din zona. Puteti lua cina la pensiune dacă vorbiți cu proprietarul
-                sau puteți merge în apropiere
-                la doua localuri cu mâncare excelenta.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+              <h3 data-i18n="home.testimonials.corina.name"></h3>
+              <h4 data-i18n="home.testimonials.corina.role"></h4>
+              <p data-i18n-html="home.testimonials.corina.quote"></p>
             </div>
           </div>
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Ghiuruțan, ro</h3>
-              <h4>Guest</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Totul a fost excelent. Camere sunt foarte curate. Nu am simțit niciun fel de miros neplăcut in întreaga
-                pensiune. De asemenea,
-                camerele sunt foarte spațioase. Proprietarii sunt niște oameni extraordinari care ne-au primit cu
-                caldura si ne-au făcut sa ne simțit
-                ca acasă. Micul dejun a fost plin de bunătăți: omleta, platou cu brânzeturi și mezeluri, iaurturi,
-                cornuri și multe alte bunătăți.
-                A fost un mic dejun potrivit chiar și pentru o persoana pretențioasa la mâncare pentru ca a avut de unde
-                alege. Recomand cu mare drag,
-                cu siguranța ne vom mai întoarce aici când suntem in trecere prin aceasta zonă.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
+              <h3 data-i18n="home.testimonials.ghiurutan.name"></h3>
+              <h4 data-i18n="home.testimonials.ghiurutan.role"></h4>
+              <p data-i18n-html="home.testimonials.ghiurutan.quote"></p>
             </div>
           </div>
 
@@ -514,243 +385,452 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Gallery</h2>
-          <p>Photos of the property</p>
+          <h2 data-i18n="home.portfolio.title"></h2>
+          <p data-i18n="home.portfolio.subtitle"></p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-room">Rooms</li>
-              <li data-filter=".filter-area">Common Areas</li>
-              <li data-filter=".filter-food">Food</li>
+              <li data-filter="*" class="filter-active" data-i18n="home.portfolio.filters.all"></li>
+              <li data-filter=".filter-room" data-i18n="home.portfolio.filters.room"></li>
+              <li data-filter=".filter-area" data-i18n="home.portfolio.filters.area"></li>
+              <li data-filter=".filter-food" data-i18n="home.portfolio.filters.food"></li>
+              <li data-filter=".filter-joseni" data-i18n="home.portfolio.filters.joseni"></li>
+              <li data-filter=".filter-borzont" data-i18n="home.portfolio.filters.borzont"></li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-room">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/living4.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/living4.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Apartment (for 4 people)</h4>
-                <p>Rooms</p>
+                <h4 data-i18n="home.portfolio.items.apartment4"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/living4.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/living4.webp" data-gall="portfolioGallery" class="venobox"
                     title="Apartment (for 4 people)"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-area">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/hall.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/hall.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Hall</h4>
-                <p>Common Areas</p>
+                <h4 data-i18n="home.portfolio.items.hall"></h4>
+                <p data-i18n="home.portfolio.categories.commonAreas"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/hall.jpg" data-gall="portfolioGallery" class="venobox" title="Hall"><i
+                  <a href="../assets/img/joseni/hall.webp" data-gall="portfolioGallery" class="venobox" title="Hall"><i
                       class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-room">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/bathroom.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/bathroom.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Bathroom upstairs</h4>
-                <p>Rooms</p>
+                <h4 data-i18n="home.portfolio.items.bathroomUp"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/bathroom.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/bathroom.webp" data-gall="portfolioGallery" class="venobox"
                     title="Bathroom upstairs"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-area">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/halletaj.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/halletaj.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Hall upstairs</h4>
-                <p>Common Areas</p>
+                <h4 data-i18n="home.portfolio.items.hallUp"></h4>
+                <p data-i18n="home.portfolio.categories.commonAreas"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/halletaj.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/halletaj.webp" data-gall="portfolioGallery" class="venobox"
                     title="Hall upstairs"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-area">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/kitchen.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/kitchen.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Kitchen</h4>
-                <p>Common Areas</p>
+                <h4 data-i18n="home.portfolio.items.kitchen"></h4>
+                <p data-i18n="home.portfolio.categories.commonAreas"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/kitchen.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/kitchen.webp" data-gall="portfolioGallery" class="venobox"
                     title="Kitchen"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-area">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/living.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/living.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Dining Room / TV Area</h4>
-                <p>Common Area</p>
+                <h4 data-i18n="home.portfolio.items.dining"></h4>
+                <p data-i18n="home.portfolio.categories.commonArea"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/living.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/living.webp" data-gall="portfolioGallery" class="venobox"
                     title="Dining Room / TV Area"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-area">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/kitchen2.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/kitchen2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Kitchen</h4>
-                <p>Common Area</p>
+                <h4 data-i18n="home.portfolio.items.kitchen"></h4>
+                <p data-i18n="home.portfolio.categories.commonArea"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/kitchen2.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/kitchen2.webp" data-gall="portfolioGallery" class="venobox"
                     title="Kitchen"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-area">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/kitchen3.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/kitchen3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Kitchen</h4>
-                <p>Common Area</p>
+                <h4 data-i18n="home.portfolio.items.kitchen"></h4>
+                <p data-i18n="home.portfolio.categories.commonArea"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/kitchen3.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/kitchen3.webp" data-gall="portfolioGallery" class="venobox"
                     title="Kitchen"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-area">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/living1.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/living1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Dining Room / TV Area</h4>
-                <p>Common Area</p>
+                <h4 data-i18n="home.portfolio.items.dining"></h4>
+                <p data-i18n="home.portfolio.categories.commonArea"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/living1.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/living1.webp" data-gall="portfolioGallery" class="venobox"
                     title="Dining Room / TV Area"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-room">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/living4jos.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/living4jos.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Living Room in Apartment</h4>
-                <p>Rooms</p>
+                <h4 data-i18n="home.portfolio.items.livingApartment"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/living4jos.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/living4jos.webp" data-gall="portfolioGallery" class="venobox"
                     title="Living Room in Apartment"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-room">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/room3.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/room3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Room (for 3 people)</h4>
-                <p>Rooms</p>
+                <h4 data-i18n="home.portfolio.items.room3"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/room3.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/room3.webp" data-gall="portfolioGallery" class="venobox"
                     title="Room (for 3 people)"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-room">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/room4.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/room4.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Apartment (for 4 people)</h4>
-                <p>Rooms</p>
+                <h4 data-i18n="home.portfolio.items.apartment4"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/room4.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/room4.webp" data-gall="portfolioGallery" class="venobox"
                     title="Apartment (for 4 people)"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-room">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/tub.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/tub.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Bathroom with Bathtub</h4>
-                <p>Rooms</p>
+                <h4 data-i18n="home.portfolio.items.bathTub"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/tub.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/tub.webp" data-gall="portfolioGallery" class="venobox"
                     title="Bathroom with Bathtub"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-food">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-food filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/food.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/food.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Food</h4>
-                <p>Food</p>
+                <h4 data-i18n="home.portfolio.items.food"></h4>
+                <p data-i18n="home.portfolio.categories.food"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/food.jpg" data-gall="portfolioGallery" class="venobox" title="Food"><i
+                  <a href="../assets/img/joseni/food.webp" data-gall="portfolioGallery" class="venobox" title="Food"><i
                       class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-room">
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-joseni">
             <div class="portfolio-wrap">
-              <img src="../assets/img/rooms/room31.jpg" class="img-fluid" alt="">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/joseni/room31.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
               <div class="portfolio-info">
-                <h4>Room (for 3 people)</h4>
-                <p>Rooms</p>
+                <h4 data-i18n="home.portfolio.items.room3"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.joseni"></span>
                 <div class="portfolio-links">
-                  <a href="../assets/img/rooms/room31.jpg" data-gall="portfolioGallery" class="venobox"
+                  <a href="../assets/img/joseni/room31.webp" data-gall="portfolioGallery" class="venobox"
                     title="Room (for 3 people)"><i class="bx bx-plus"></i></a>
-                  <a href="/room-details" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="/en/joseni" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/kozter0.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontCommonsAlt"></h4>
+                <p data-i18n="home.portfolio.categories.commonAreas"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/kozter0.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Social lounge in Borzont"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/kozter1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontDining"></h4>
+                <p data-i18n="home.portfolio.categories.commonAreas"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/kozter1.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Dining area in Borzont"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/kozter2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontLounge"></h4>
+                <p data-i18n="home.portfolio.categories.commonAreas"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/kozter2.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Lounge corner in Borzont"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-area filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/kozter3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontCommons"></h4>
+                <p data-i18n="home.portfolio.categories.commonAreas"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/kozter3.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Community hall in Borzont"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/room1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontRooms"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/room1.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Twin room with balcony"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/room2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontRoomBright"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/room2.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Bright twin room"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/room3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontRoomFamily"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/room3.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Family-ready room"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/room4.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontRoomSerene"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/room4.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Serene corner room"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-room filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/bathroom1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontBathroom"></h4>
+                <p data-i18n="home.portfolio.categories.rooms"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/bathroom1.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Borzont bathroom"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-food filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/kaja1.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontFood"></h4>
+                <p data-i18n="home.portfolio.categories.food"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/kaja1.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Breakfast at Borzont"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-food filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/kaja2.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontFood2"></h4>
+                <p data-i18n="home.portfolio.categories.food"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/kaja2.webp" data-gall="portfolioGallery" class="venobox"
+                    title="Buffet spread in Borzont"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6 col-lg-4 portfolio-item filter-food filter-borzont">
+            <div class="portfolio-wrap">
+              <img loading="lazy" class="img-fluid lazy-image" data-src="../assets/img/borzont/kaja3.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="">
+              <div class="portfolio-info">
+                <h4 data-i18n="home.portfolio.items.borzontFood3"></h4>
+                <p data-i18n="home.portfolio.categories.food"></p>
+                <span class="portfolio-location" data-i18n="home.portfolio.locations.borzont"></span>
+                <div class="portfolio-links">
+                  <a href="../assets/img/borzont/kaja3.webp" data-gall="portfolioGallery" class="venobox"
+                    title="House-made treats"><i class="bx bx-plus"></i></a>
+                  <a href="/en/borzont" title="" data-i18n-title="portfolio.moreDetails"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -761,161 +841,120 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>We have 2 type of rooms/apartments</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
-              <h3>Room (for 3 people)</h3>
-              <h4>299 RON<span> / night</span></h4>
-              <ul>
-                <li>199 RON for 1 or 2 people</li>
-                <li>Private Bathroom</li>
-                <li>Refrigerator in the room</li>
-                <li>TV</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="https://forms.gle/5kmLQehRwpPD4J3R7" class="btn-buy">Book now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Apartment (for 4 people)</h3>
-              <h4>399 RON<span> / night</span></h4>
-              <ul>
-                <li>299 RON for 1, 2 or 3 people</li>
-                <li>Private Bathroom</li>
-                <li>Refrigerator in the room</li>
-                <li>Living room</li>
-                <li>TV</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="https://forms.gle/5kmLQehRwpPD4J3R7" class="btn-buy">Book now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
-              <h3>Hot Tub</h3>
-              <h4>499 RON<span> / day</span></h4>
-              <ul>
-                <li>Fresh water or Brine (Salty water)</li>
-                <li>Capacity: 8 - 10 Adults</li>
-                <li>Outdoor facility</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="https://forms.gle/5kmLQehRwpPD4J3R7" class="btn-buy">Book now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
+          <h2 data-i18n="home.contact.title"></h2>
         </div>
 
-        <div class="row">
+        <div class="row gy-4 contact-layout">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-about">
-              <h3>Csató Pension</h3>
-              <p>For further more information feel free to contact us. We are here to help you.</p>
-              <div class="social-links">
-                <a href="https://www.facebook.com/CsatoPanzio" class="facebook"><i class="icofont-facebook"></i></a>
-                <a href="https://www.instagram.com/csatopanzio/" class="instagram"><i class="icofont-instagram"></i></a>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-panel contact-panel--info">
+              <div class="contact-panel__intro">
+                <h3 data-i18n="home.contact.brand"></h3>
+                <p data-i18n="home.contact.description"></p>
               </div>
-              <div data-aos="fade-up" data-aos-delay="800">
-                <a href="https://forms.gle/5kmLQehRwpPD4J3R7" target="_blank" class="btn-get-started scrollto">Google
-                  Form</a>
+              <div class="contact-social">
+                <a href="https://www.facebook.com/CsatoPanzio" class="facebook" aria-label="Facebook"><i class="icofont-facebook"></i></a>
+                <a href="https://www.instagram.com/csatopanzio/" class="instagram" aria-label="Instagram"><i class="icofont-instagram"></i></a>
               </div>
-              <div data-aos="fade-up" data-aos-delay="800">
-                <a href="https://www.booking.com/hotel/ro/csato-panzio-pensiunea-csato.html?lang=xu">Booking.com</a>
+              <div class="contact-actions">
+                <a href="https://forms.gle/5kmLQehRwpPD4J3R7" target="_blank" rel="noopener" class="contact-btn contact-btn--solid" data-i18n="home.contact.googleForm"></a>
+                <a href="https://www.booking.com/hotel/ro/csato-panzio-pensiunea-csato.html?lang=xu" class="contact-btn contact-btn--ghost" data-i18n="home.contact.booking"></a>
+              </div>
+              <div class="contact-info-grid">
+                <div class="contact-info-list">
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="ri-map-pin-line"></i>
+                    </div>
+                    <div class="contact-info-content">
+                      <span class="contact-info-label" data-i18n="global.nav.joseni"></span>
+                      <a href="https://maps.app.goo.gl/SNARYWMSKZN7ZMcP6" class="contact-info-value" target="_blank" data-i18n-html="home.contact.locations.joseni"></a>
+                    </div>
+                  </div>
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="ri-map-pin-line"></i>
+                    </div>
+                    <div class="contact-info-content">
+                      <span class="contact-info-label" data-i18n="global.nav.borzont"></span>
+                      <a href="https://maps.app.goo.gl/7BfMABmSJ37mfZtM9" class="contact-info-value" target="_blank" data-i18n-html="home.contact.locations.borzont"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-info-list">
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="ri-mail-send-line"></i>
+                    </div>
+                    <div class="contact-info-content">
+                      <span class="contact-info-label" data-i18n="home.contact.labels.email"></span>
+                      <a href="mailto:csatopanzio@gmail.com" class="contact-info-value" data-i18n="home.contact.email"></a>
+                    </div>
+                  </div>
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="ri-phone-line"></i>
+                    </div>
+                    <div class="contact-info-content">
+                      <span class="contact-info-label" data-i18n="home.contact.labels.phone"></span>
+                      <div class="contact-info-value contact-info-value--stacked">
+                        <a href="tel:+40747941491" data-i18n="home.contact.phonePrimary"></a>
+                        <a href="tel:+40755289932" data-i18n="home.contact.phoneSecondary"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="info">
-              <div>
-                <i class="ri-map-pin-line"></i>
-                <a href="https://maps.app.goo.gl/SNARYWMSKZN7ZMcP6" class="phone-number" target="_blank">Strada Gheorgheni, 5<br>Joseni, HR, 537130</a>
-              </div>
-
-              <div>
-                <i class="ri-mail-send-line"></i>
-                <a href= "mailto:csatopanzio@gmail.com" class="phone-number">csatopanzio@gmail.com</a>
-              </div>
-
-              <div>
-                <i class="ri-phone-line"></i>
-                <a href="tel:+40752245385" class="phone-number">+40 752 245 385</a>
-              </div>
-              
-              <div>
-                <i class="ri-phone-line"></i>
-                <a href="tel:+40755289932" class="phone-number">+40 755 289 932</a>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form id="contactForm" action="https://formsubmit.co/csatopanzio@gmail.com" method="POST" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="250">
+            <div class="contact-panel contact-panel--form">
+              <form id="contactForm" action="https://formsubmit.co/csatopanzio@gmail.com" method="POST" class="php-email-form">
+                <div class="form-group">
+                  <label for="name" class="form-label" data-i18n="home.contact.form.name"></label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder=""
+                  data-rule="minlen:4" data-msg="" data-i18n-placeholder="contact.form.name"
+                  data-i18n-msg="contact.form.nameError" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" />
+                <label for="email" class="form-label" data-i18n="home.contact.form.email"></label>
+                <input type="email" class="form-control" name="email" id="email" placeholder=""
+                  data-rule="email" data-msg="" data-i18n-placeholder="contact.form.email"
+                  data-i18n-msg="contact.form.emailError" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <label for="subject" class="form-label" data-i18n="home.contact.form.subject"></label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder=""
+                  data-rule="minlen:4" data-msg=""
+                  data-i18n-placeholder="contact.form.subject" data-i18n-msg="contact.form.subjectError" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                <label for="message" class="form-label" data-i18n="home.contact.form.message"></label>
+                <textarea class="form-control" name="message" id="message" rows="10" data-rule="required"
+                  data-msg="" placeholder=""
+                  data-i18n-placeholder="contact.form.message" data-i18n-msg="contact.form.messageError"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="loading" data-i18n="home.contact.form.loading"></div>
+                <div class="error-message" data-i18n="home.contact.form.error"></div>
+                <div class="sent-message" data-i18n="home.contact.form.success"></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" data-i18n="home.contact.form.send"></button></div>
               <input type="hidden" name="_captcha" value="false">
               <!-- <input type="hidden" name="_next" value="false"> -->
-              <script>
-                document.getElementById("contactForm").addEventListener("submit", function (e) {
-                  const nextInput = document.querySelector('input[name="_next"]');
-                  nextInput.disabled = true; // Temporarily disable _next before submission
-                });
-              </script>
               <script src="../assets/js/form.js"></script>
             </form>
+            </div>
           </div>
 
         </div>
@@ -927,27 +966,18 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-6 text-lg-left text-center">
-          <div class="copyright">
-            &copy; Copyright <strong>Csató</strong> - All Rights Reserved | By <a href="https://dotslash.ro">
-              DotSlash Romania </a>
-          </div>
-
-        </div>
-      </div>
+    <div class="container text-center">
+      <div class="copyright text-center" data-i18n-html="global.footer.text"></div>
     </div>
   </footer>
   <!-- End Footer -->
 
   <div id="cookieConsent" class="cookie-banner">
     <p>
-      This website uses cookies to improve your experience. By continuing, you agree to our use 
-	  of cookies.
-      <a href="/en/privacy-policy" target="_blank">Learn more</a>.
+      <span data-i18n="global.cookies.message"></span>
+      <a href="/en/privacy-policy" target="_blank" data-i18n="global.cookies.link"></a>.
     </p>
-    <button id="acceptCookies" class="btn">Accept</button>
+    <button id="acceptCookies" class="btn" data-i18n="global.cookies.accept"></button>
   </div>
 
 
@@ -967,6 +997,7 @@
   <script src="../assets/js/main.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="../assets/js/cookies.js"></script>
+  <script src="../assets/js/i18n.js"></script>
 
 </body>
 

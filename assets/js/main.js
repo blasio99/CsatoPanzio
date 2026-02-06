@@ -165,8 +165,10 @@
   });
 
   // Porfolio isotope and filter
+  var portfolioIsotope;
+
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
+    portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
     });
@@ -208,6 +210,74 @@
     aos_init();
   });
 
+  function initLazyImages() {
+    var lazyImages = [].slice.call(document.querySelectorAll('img.lazy-image'));
+    if (!lazyImages.length) {
+      return;
+    }
+
+    var loadImage = function(img) {
+      if (img.dataset.src) {
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+      }
+      img.addEventListener('load', function() {
+        if (portfolioIsotope) {
+          portfolioIsotope.isotope('layout');
+        }
+      }, { once: true });
+    };
+
+    if (!('IntersectionObserver' in window)) {
+      lazyImages.forEach(loadImage);
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries, obs) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          loadImage(entry.target);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '200px 0px',
+      threshold: 0.01
+    });
+
+    lazyImages.forEach(function(img) {
+      observer.observe(img);
+    });
+  }
+
+  function initPreloaderBrand() {
+    var wordEl = document.querySelector('.preloader-brand');
+    if (!wordEl) {
+      return;
+    }
+    var text = (wordEl.getAttribute('data-word') || wordEl.textContent || '').trim();
+    if (!text || wordEl.dataset.split === 'true') {
+      return;
+    }
+    wordEl.dataset.split = 'true';
+    var fragment = document.createDocumentFragment();
+    text.split('').forEach(function(letter, index) {
+      var span = document.createElement('span');
+      span.className = 'preloader-letter';
+      span.textContent = letter;
+      span.style.animationDelay = (index * 0.12) + 's';
+      fragment.appendChild(span);
+    });
+    wordEl.innerHTML = '';
+    wordEl.appendChild(fragment);
+    wordEl.classList.add('preloader-brand--split');
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    initLazyImages();
+    initPreloaderBrand();
+  });
+
 })(jQuery);
 
 
@@ -239,7 +309,7 @@ function preloaderFunction() {
 				
 			});
 		}
-	}, 1000);
+	}, 2000);
 }
 
 

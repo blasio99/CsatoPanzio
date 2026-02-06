@@ -1,0 +1,272 @@
+{
+  "global": {
+    "meta": {
+      "title": "Csató Guesthouse",
+      "description": "Csató Panzió - Pensiunea Csató",
+      "keywords": "Hotel, Csató, Panzió, Pensiune, Guesthouse, Hotel, Accomodation, Cazare, Joseni, Harghita, Alfalu, Hargita, Gheorgheni, Gyergyószentmiklós"
+    },
+    "nav": {
+      "brand": "Csató Guesthouse",
+      "home": "Home",
+      "about": "About",
+      "portfolio": "Portfolio",
+      "contact": "Contact",
+      "joseni": "Joseni",
+      "borzont": "Borzont",
+      "langHu": "HU",
+      "langRo": "RO",
+      "langEn": "EN"
+    },
+    "footer": {
+      "text": "&copy; Copyright <strong>Csató</strong> - All Rights Reserved | By <a href=\"https://dotslash.ro\"> DotSlash Romania </a>"
+    },
+    "cookies": {
+      "message": "This website uses cookies to improve your experience. By continuing, you agree to our use of cookies.",
+      "link": "Learn more",
+      "accept": "Accept"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "A few days to relax.",
+      "subtitle": "A unique atmosphere blending tradition with modern comfort.",
+      "cta": "Contact us"
+    },
+    "about": {
+      "title": "About Us",
+      "intro": "<p>Csató Panzió welcomes guests in two villages of Transylvania. The guesthouse in Joseni delivers a boutique wellness experience for smaller groups, while the one in Borzont focuses on larger gatherings who want countryside calm with the same comfort and services.</p>",
+      "locations": {
+        "joseni": {
+          "title": "Joseni · retreat for 18 guests",
+          "body": "<ul><li><i class=\"ri-checkbox-blank-circle-fill\"></i> 3 apartments for 4 people with private bathrooms and refrigerators</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> 2 rooms for 3 people, ideal for families</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> Hot tub, sauna, barbecue, shared kitchen, cozy lounge</li></ul>"
+        },
+        "borzont": {
+          "title": "Borzont · 10 rooms for 30 people",
+          "body": "<ul><li><i class=\"ri-checkbox-blank-circle-fill\"></i> 10 twin rooms with optional extra bed and private bathroom</li><li><i class=\"ri-checkbox-blank-circle-fill\"></i> Lounge areas, hot tub, sauna, BBQ and many more</li></ul>"
+        }
+      }
+    },
+    "counts": {
+      "happy": "<strong>Happy Clients</strong> were in our property.",
+      "nights": "<strong>Nights</strong> spent by guests in the property",
+      "years": "<strong>Sixth year</strong> of being with you.",
+      "foods": "The number of <strong>various foods</strong> served at the property."
+    },
+    "features": {
+      "title": "Facilities",
+      "subtitle": "There are a lot of facilities you can enjoy.",
+      "items": {
+        "stores": "Stores in the area",
+        "parking": "Free Parking",
+        "internet": "Free internet",
+        "menu": "Menu (only on request)",
+        "bbq": "BBQ Facilities",
+        "smoking": "Smoking area",
+        "terrace": "Terrace",
+        "tub": "Hot Tub",
+        "heating": "Heating included in price",
+        "tv": "Flat-screen TVs",
+        "garden": "Garden",
+        "noPets": "<strong>NO</strong> pets allowed"
+      }
+    },
+    "testimonials": {
+      "title": "Reviews",
+      "subtitle": "Reviews are taken from Booking.com and Facebook page",
+      "silvia": {
+        "name": "Silvia, md",
+        "role": "Guest",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>O pensiune moderna, curata. Liniștea si amabilitatea personalului domnește in interior. Parcare gratuita in ograda proprietății. Conexiune de internet puternica. Mic dejun gustos si variat. Cafea bună, poți servi oricând. Baia dotata cu de toate: fen, gel de dus, prosoape. Aducem mulțumiri personalului, in special dlui Hunor, ca ne-a surprins placut in seara de Crăciun cu un platou de dulciuri si palinca, din partea casei!! Vom reveni pentru a finisa traseul de obiective turistice - recomandate de dul Hunor. Recomand din suflet PENSIUNEA CSATÓ.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "ioana": {
+        "name": "Ioana Andreea",
+        "role": "Guest",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Exceptionala cazare! Gazdele foarte amabile, camera foarte curata si cozy, totul nou, conditii minunate, mic dejun delicios!<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "res77": {
+        "name": "Res77",
+        "role": "Guest",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Totul la superlativ. De la primire pana la comfort, pret/calitate. Camerele foarte curate, bucataria dotata cu de toate, gratar, living generos, inclusiv jocuri de societate. Nu ratati aceasta pensiune.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "nicu": {
+        "name": "Nicu Girneata",
+        "role": "Guest",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>O locație îngrijită, administrata de oameni ospitalieri. Super!!<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "gabriella": {
+        "name": "Gabriella Nagy",
+        "role": "Guest",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Hangulatos hely,szivelyes fogadtatas, baratsagos,kedves vendeglatas 🙂 szivbol ajanlom 👏🏼👏🏼<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "aniko": {
+        "name": "Anikó, hu",
+        "role": "Guest",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>A panzió tiszta, modern és ízlésesen berendezett. A szállásadók IGAZI vendéglátók, bármilyen kéréssel, kérdéssel fordulhattunk hozzájuk, segítettek a kirándulással, éttermekkel kapcsolatban. A reggeli elmondhatatlanul finom, bőséges volt, melyet ott helyben, helyi alapanyagokból készítettek nekünk. Nagyon jó elhelyezkedés a környék látnivalóihoz tett kirándulásokhoz. Maximális megelégedettséggel távoztunk, ha arrajárunk, biztosan ott szállunk meg legközelebb is :)<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "corina": {
+        "name": "Corina Adriana",
+        "role": "Guest",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Camera mare, curata, totul îngrijit și de bun gust. Proprietarii foarte amabili, plăcuți. Micul dejun foarte bun, variat și bogat. Localizare aproape de multe atracții din zona. Puteti lua cina la pensiune dacă vorbiți cu proprietarul sau puteți merge în apropiere la doua localuri cu mâncare excelenta.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      },
+      "ghiurutan": {
+        "name": "Ghiuruțan, ro",
+        "role": "Guest",
+        "quote": "<i class=\"bx bxs-quote-alt-left quote-icon-left\"></i>Totul a fost excelent. Camere sunt foarte curate. Nu am simțit niciun fel de miros neplăcut in întreaga pensiune. De asemenea, camerele sunt foarte spațioase. Proprietarii sunt niște oameni extraordinari care ne-au primit cu caldura si ne-au făcut sa ne simțit ca acasă. Micul dejun a fost plin de bunătăți: omleta, platou cu brânzeturi și mezeluri, iaurturi, cornuri și multe alte bunătăți. A fost un mic dejun potrivit chiar și pentru o persoana pretențioasa la mâncare pentru ca a avut de unde alege. Recomand cu mare drag, cu siguranța ne vom mai întoarce aici când suntem in trecere prin aceasta zonă.<i class=\"bx bxs-quote-alt-right quote-icon-right\"></i>"
+      }
+    },
+    "portfolio": {
+      "title": "Gallery",
+      "subtitle": "Photos of the property",
+      "filters": {
+        "all": "All",
+        "room": "Rooms",
+        "area": "Common Areas",
+        "food": "Food",
+        "joseni": "Joseni",
+        "borzont": "Borzont"
+      },
+      "categories": {
+        "rooms": "Rooms",
+        "commonAreas": "Common Areas",
+        "commonArea": "Common Area",
+        "food": "Food"
+      },
+      "locations": {
+        "joseni": "Joseni",
+        "borzont": "Borzont"
+      },
+      "moreDetails": "More Details",
+      "items": {
+        "apartment4": "Apartment (for 4 people)",
+        "hall": "Hall",
+        "bathroomUp": "Bathroom upstairs",
+        "hallUp": "Hall upstairs",
+        "kitchen": "Kitchen",
+        "dining": "Dining Room / TV Area",
+        "livingApartment": "Living Room in Apartment",
+        "room3": "Room (for 3 people)",
+        "bathTub": "Bathroom with Bathtub",
+        "food": "Food",
+        "borzontDining": "Dining area in Borzont",
+        "borzontLounge": "Lounge corner in Borzont",
+        "borzontCommons": "Community hall in Borzont",
+        "borzontCommonsAlt": "Social lounge in Borzont",
+        "borzontRooms": "Twin room with balcony",
+        "borzontRoomBright": "Bright twin room",
+        "borzontRoomFamily": "Family-ready room",
+        "borzontRoomSerene": "Serene corner room",
+        "borzontBathroom": "Borzont bathroom",
+        "borzontFood": "Breakfast at Borzont",
+        "borzontFood2": "Buffet spread in Borzont",
+        "borzontFood3": "House-made treats"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "brand": "Csató Guesthouse",
+      "description": "For further more information feel free to contact us. We are here to help you.",
+      "googleForm": "Google Form",
+      "booking": "Booking.com",
+      "labels": {
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "locations": {
+        "joseni": "Strada Gheorgheni, 5<br>Joseni, HR, 537130",
+        "borzont": "Strada Principală, 132<br>Borzont, HR, 537131"
+      },
+      "email": "csatopanzio@gmail.com",
+      "phonePrimary": "+40 747 941 491",
+      "phoneSecondary": "+40 755 289 932",
+      "form": {
+        "name": "Your Name",
+        "nameError": "Please enter at least 4 chars",
+        "email": "Your Email",
+        "emailError": "Please enter a valid email",
+        "subject": "Subject",
+        "subjectError": "Please enter at least 8 chars of subject",
+        "message": "Message",
+        "messageError": "Please write something for us",
+        "loading": "Loading",
+        "error": "Something went wrong. Please try again.",
+        "success": "Your message has been sent. Thank you!",
+        "send": "Send Message"
+      }
+    }
+  },
+  "lodging": {
+    "labels": {
+      "type": "Type:",
+      "placement": "Placement:",
+      "book": "Book now:",
+      "note": "Note:"
+    }
+  },
+  "joseni": {
+    "sections": {
+      "whole": {
+        "title": "Entire property",
+        "subtitle": "for 18 adults",
+        "list": {
+          "type": "for 18 adults"
+        },
+        "description": "5 rooms, private bathrooms, refrigerators in each room, free wifi, access to the kitchen, slippers, free parking, hot tub, BBQ facilities, heating, 24/24 support."
+      },
+      "room3": {
+        "title": "Room of 3 beds with private bathroom",
+        "subtitle": "for 3 adults",
+        "list": {
+          "type": "for 3 adults",
+          "placement": "Upstairs"
+        },
+        "count": "There are 2 rooms in total like this.",
+        "description": "This type of room contains 1 bed for 1 adult, and a Queen bed for 2 adults, private bathroom, refrigerator, free wifi, access to the kitchen."
+      },
+      "apartmentUp": {
+        "title": "Apartment for 4 adults with private bathroom",
+        "subtitle": "for 4 people",
+        "list": {
+          "type": "for 4 adults",
+          "placement": "Upstairs"
+        },
+        "count": "There are 2 rooms in total like this.",
+        "description": "This type of room contains an extensible sofa for 2 adults and a Queen bed for 2 adults, private bathroom, refrigerator, free wifi, access to the kitchen."
+      },
+      "apartmentDown": {
+        "title": "Apartment for 4 adults with private bathroom",
+        "subtitle": "for 4 people",
+        "list": {
+          "type": "for 4 people",
+          "placement": "Downstairs"
+        },
+        "count": "There is 1 room in total like this.",
+        "description": "This type of room contains an extensible sofa for 2 adults and a Queen bed for 2 adults, private bathroom, refrigerator, free wifi, access to the kitchen."
+      }
+    }
+  },
+  "borzont": {
+    "sections": {
+      "whole": {
+        "title": "Entire property",
+        "subtitle": "Up to 30 guests",
+        "list": {
+          "type": "10 rooms · 30 guests"
+        },
+        "description": "Ten double rooms that can accommodate a third guest on request, offering space for up to 30 people. Lounge areas, hot tub, sauna, BBQ, Wi-Fi, parking, and round-the-clock support."
+      },
+      "rooms": {
+        "title": "Rooms for 2-3 guests",
+        "subtitle": "Balcony on request",
+        "list": {
+          "type": "2 twin beds + optional extra bed",
+          "placement": "Balcony available in selected rooms"
+        },
+        "count": "10 similar rooms available across the property.",
+        "description": "Bright rooms furnished with twin beds that can be combined and an extra bed for a third guest. Every room includes a private bathroom, Wi-Fi, fridge, heating, and full access to all facilities (except for the kitchen)."
+      }
+    }
+  },
+  "privacy": {
+    "contentHtml": "<h1 style=\"padding-top: 10%\">Privacy Policy</h1>\n    <h2>Effective Date: 15/12/2024</h2>\n    <p>This Privacy Policy describes how we collect, use, and protect your information when you visit our website. By\n      using this website, you agree to the terms of this policy.</p>\n\n    <h3>1. Information We Collect</h3>\n    <p>We collect information to improve your experience on our website. The information we collect includes:</p>\n    <ul>\n      <li><strong>Personal Information:</strong> When you contact us via forms, we may collect your name, email address,\n        and other information you provide voluntarily.</li>\n      <li><strong>Usage Data:</strong> We automatically collect non-personal information about your interactions with\n        our website, such as:\n        <ul>\n          <li>Pages visited</li>\n          <li>Time spent on the website</li>\n          <li>IP address</li>\n          <li>Browser type and version</li>\n          <li>Operating system</li>\n        </ul>\n      </li>\n    </ul>\n\n    <h3>2. Use of Cookies</h3>\n    <p>Cookies are small text files stored on your device to enhance your browsing experience. We use cookies for the\n      following purposes:</p>\n    <ul>\n      <li><strong>Necessary Cookies:</strong> These cookies are required for the website to function properly.</li>\n      <li><strong>Analytics Cookies:</strong> We use Google Analytics to understand how visitors use our website and\n        improve our services.</li>\n    </ul>\n    <p>For more information on how Google collects and processes data, visit:\n      <a href=\"https://policies.google.com/technologies/partner-sites\" target=\"_blank\">Google's Privacy & Terms</a>\n    </p>\n\n    <h3>3. Managing Cookies</h3>\n    <p>You can manage your cookie preferences through your browser settings. Most browsers allow you to block or delete\n      cookies. However, please note that disabling cookies may affect the functionality of this website.</p>\n    <p>If you wish to opt out of Google Analytics tracking, you can use the following tools:\n      <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\">Google Analytics Opt-Out Browser Add-on</a>\n    </p>\n\n    <h3>4. How We Use Your Information</h3>\n    <p>The information we collect is used for:</p>\n    <ul>\n      <li>Improving website functionality and user experience</li>\n      <li>Understanding website performance and visitor behavior</li>\n      <li>Responding to your inquiries or requests</li>\n    </ul>\n    <p>We do not sell or share your personal information with third parties for marketing purposes.</p>\n\n    <h3>5. Data Retention</h3>\n    <p>We retain your data only for as long as necessary to fulfill the purposes outlined in this policy. Usage data\n      collected via Google Analytics is retained according to Google’s data retention policies.</p>\n\n    <h3>6. Your Rights</h3>\n    <p>Depending on your location, you may have the following rights under applicable privacy laws:</p>\n    <ul>\n      <li>The right to access your data</li>\n      <li>The right to request correction or deletion of your data</li>\n      <li>The right to withdraw consent for data processing</li>\n      <li>The right to file a complaint with a data protection authority</li>\n    </ul>\n    <p>To exercise your rights, contact us at: csatopanzio@gmail.com</p>\n\n    <h3>7. Third-Party Services</h3>\n    <p>We use third-party services like Google Analytics to improve our website. These services may collect, store, and\n      process data independently. We recommend reviewing their privacy policies for more information:</p>\n    <ul>\n      <li><a href=\"https://policies.google.com/privacy\" target=\"_blank\">Google's Privacy Policy</a></li>\n    </ul>\n\n    <h3>8. Security</h3>\n    <p>We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no\n      data transmission over the internet can be guaranteed as completely secure.</p>\n\n    <h3>9. Changes to This Privacy Policy</h3>\n    <p>We may update this policy from time to time. Any changes will be posted on this page with the updated effective\n      date. We encourage you to review this policy periodically.</p>\n\n    <h3>10. Contact Us</h3>\n    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>\n    <p><strong>Email:</strong> csatopanzio@gmail.com</p>\n    <p><strong>Address:</strong> Str. Gheorgheni, nr. 5, Joseni, Harghita, România</p>\n  </div>\n\n  <!-- ======= Footer ======= -->"
+  }
+}
